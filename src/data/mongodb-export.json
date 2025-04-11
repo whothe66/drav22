@@ -1,0 +1,1722 @@
+
+{
+  "officeSites": [
+    {
+      "id": "1",
+      "data": {
+        "id": 1,
+        "name": "London HQ",
+        "city": "London",
+        "country": "United Kingdom",
+        "address": "123 Thames Blvd, London",
+        "employeeCount": 850,
+        "tier": 1,
+        "activeRisksIssues": 5,
+        "maturityScore": 3.8
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "id": 2,
+        "name": "New York Office",
+        "city": "New York",
+        "country": "United States",
+        "address": "456 Broadway, New York",
+        "employeeCount": 620,
+        "tier": 1,
+        "activeRisksIssues": 7,
+        "maturityScore": 3.5
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "id": 3,
+        "name": "Singapore Hub",
+        "city": "Singapore",
+        "country": "Singapore",
+        "address": "78 Marina Bay, Singapore",
+        "employeeCount": 310,
+        "tier": 2,
+        "activeRisksIssues": 3,
+        "maturityScore": 4.2
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "id": 4,
+        "name": "Berlin Office",
+        "city": "Berlin",
+        "country": "Germany",
+        "address": "22 Brandenburg Ave, Berlin",
+        "employeeCount": 175,
+        "tier": 2,
+        "activeRisksIssues": 6,
+        "maturityScore": 2.7
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "id": 5,
+        "name": "Mumbai Branch",
+        "city": "Mumbai",
+        "country": "India",
+        "address": "45 Gateway Road, Mumbai",
+        "employeeCount": 290,
+        "tier": 2,
+        "activeRisksIssues": 8,
+        "maturityScore": 2.3
+      }
+    },
+    {
+      "id": "6",
+      "data": {
+        "id": 6,
+        "name": "Tokyo Office",
+        "city": "Tokyo",
+        "country": "Japan",
+        "address": "112 Shibuya St, Tokyo",
+        "employeeCount": 130,
+        "tier": 3,
+        "activeRisksIssues": 2,
+        "maturityScore": 3.9
+      }
+    },
+    {
+      "id": "7",
+      "data": {
+        "id": 7,
+        "name": "Sydney Branch",
+        "city": "Sydney",
+        "country": "Australia",
+        "address": "87 Harbour Dr, Sydney",
+        "employeeCount": 85,
+        "tier": 3,
+        "activeRisksIssues": 4,
+        "maturityScore": 3.1
+      }
+    },
+    {
+      "id": "8",
+      "data": {
+        "id": 8,
+        "name": "Paris Office",
+        "city": "Paris",
+        "country": "France",
+        "address": "65 Champs-Élysées, Paris",
+        "employeeCount": 105,
+        "tier": 3,
+        "activeRisksIssues": 3,
+        "maturityScore": 2.8
+      }
+    }
+  ],
+  "lowestScoringSites": [
+    {
+      "id": "1",
+      "data": {
+        "id": 5,
+        "name": "Mumbai Branch",
+        "city": "Mumbai",
+        "country": "India",
+        "tier": "Tier 2",
+        "score": 2.3
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "id": 4,
+        "name": "Berlin Office",
+        "city": "Berlin",
+        "country": "Germany",
+        "tier": "Tier 2",
+        "score": 2.7
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "id": 8,
+        "name": "Paris Office",
+        "city": "Paris",
+        "country": "France",
+        "tier": "Tier 3",
+        "score": 2.8
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "id": 7,
+        "name": "Sydney Branch",
+        "city": "Sydney",
+        "country": "Australia",
+        "tier": "Tier 3",
+        "score": 3.1
+      }
+    }
+  ],
+  "unassessedSites": [
+    {
+      "id": "1",
+      "data": {
+        "id": 9,
+        "name": "Stockholm Office",
+        "city": "Stockholm",
+        "country": "Sweden",
+        "tier": "Tier 3",
+        "lastAssessment": "Never"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "id": 10,
+        "name": "Dubai Hub",
+        "city": "Dubai",
+        "country": "UAE",
+        "tier": "Tier 2",
+        "lastAssessment": "2023-07-15"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "id": 11,
+        "name": "Toronto Branch",
+        "city": "Toronto",
+        "country": "Canada",
+        "tier": "Tier 3",
+        "lastAssessment": "2023-05-22"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "id": 12,
+        "name": "Seoul Office",
+        "city": "Seoul",
+        "country": "South Korea",
+        "tier": "Tier 3",
+        "lastAssessment": "2023-09-03"
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "id": 13,
+        "name": "São Paulo Office",
+        "city": "São Paulo",
+        "country": "Brazil",
+        "tier": "Tier 2",
+        "lastAssessment": "2023-06-18"
+      }
+    }
+  ],
+  "criticalITServices": [
+    {
+      "id": "1",
+      "data": {
+        "id": 1,
+        "name": "Email Services",
+        "description": "Enterprise email and collaboration platform",
+        "type": "Communication",
+        "criticality": "High",
+        "vendor": "Microsoft",
+        "technology": "Exchange Online",
+        "rto": "4 hours",
+        "rpo": "15 minutes",
+        "responsibleTeam": "IT Infrastructure",
+        "supportContact": "infrastructure@company.com",
+        "lastTestedDate": "2024-01-15",
+        "lastIncidentDate": "2023-11-23",
+        "status": "Operational"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "id": 2,
+        "name": "ERP System",
+        "description": "Enterprise Resource Planning system",
+        "type": "Business Operations",
+        "criticality": "Critical",
+        "vendor": "SAP",
+        "technology": "SAP S/4HANA",
+        "rto": "2 hours",
+        "rpo": "5 minutes",
+        "responsibleTeam": "Business Applications",
+        "supportContact": "erp-support@company.com",
+        "lastTestedDate": "2023-12-05",
+        "lastIncidentDate": "2023-10-18",
+        "status": "Operational"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "id": 3,
+        "name": "CRM Platform",
+        "description": "Customer Relationship Management",
+        "type": "Sales & Marketing",
+        "criticality": "High",
+        "vendor": "Salesforce",
+        "technology": "Salesforce Cloud",
+        "rto": "4 hours",
+        "rpo": "30 minutes",
+        "responsibleTeam": "Business Applications",
+        "supportContact": "crm-support@company.com",
+        "lastTestedDate": "2024-02-10",
+        "lastIncidentDate": "2023-08-29",
+        "status": "Operational"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "id": 4,
+        "name": "Core Banking System",
+        "description": "Primary banking transaction platform",
+        "type": "Financial",
+        "criticality": "Critical",
+        "vendor": "Temenos",
+        "technology": "Temenos T24",
+        "rto": "1 hour",
+        "rpo": "0 minutes",
+        "responsibleTeam": "Financial Systems",
+        "supportContact": "banking-support@company.com",
+        "lastTestedDate": "2024-01-28",
+        "lastIncidentDate": "2023-09-12",
+        "status": "Operational"
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "id": 5,
+        "name": "VoIP Telephony",
+        "description": "Voice over IP phone system",
+        "type": "Communication",
+        "criticality": "Medium",
+        "vendor": "Cisco",
+        "technology": "Cisco Unified Communications",
+        "rto": "8 hours",
+        "rpo": "1 hour",
+        "responsibleTeam": "Network Operations",
+        "supportContact": "networking@company.com",
+        "lastTestedDate": "2023-11-15",
+        "lastIncidentDate": "2023-07-05",
+        "status": "Operational"
+      }
+    },
+    {
+      "id": "6",
+      "data": {
+        "id": 6,
+        "name": "Active Directory",
+        "description": "Identity and access management",
+        "type": "Infrastructure",
+        "criticality": "Critical",
+        "vendor": "Microsoft",
+        "technology": "Windows Server AD",
+        "rto": "2 hours",
+        "rpo": "15 minutes",
+        "responsibleTeam": "Identity Management",
+        "supportContact": "identity@company.com",
+        "lastTestedDate": "2024-02-22",
+        "lastIncidentDate": "2023-08-14",
+        "status": "Operational"
+      }
+    },
+    {
+      "id": "7",
+      "data": {
+        "id": 7,
+        "name": "Payment Gateway",
+        "description": "Online payment processing system",
+        "type": "Financial",
+        "criticality": "Critical",
+        "vendor": "Stripe",
+        "technology": "Stripe API",
+        "rto": "1 hour",
+        "rpo": "0 minutes",
+        "responsibleTeam": "Financial Systems",
+        "supportContact": "payments@company.com",
+        "lastTestedDate": "2024-01-08",
+        "lastIncidentDate": "2023-09-30",
+        "status": "Operational"
+      }
+    },
+    {
+      "id": "8",
+      "data": {
+        "id": 8,
+        "name": "HR Management System",
+        "description": "Personnel management and payroll",
+        "type": "Human Resources",
+        "criticality": "High",
+        "vendor": "Workday",
+        "technology": "Workday HCM",
+        "rto": "8 hours",
+        "rpo": "1 day",
+        "responsibleTeam": "HR IT Systems",
+        "supportContact": "hr-systems@company.com",
+        "lastTestedDate": "2023-12-18",
+        "lastIncidentDate": "2023-06-12",
+        "status": "Operational"
+      }
+    }
+  ],
+  "serviceAssets": [
+    {
+      "id": "1",
+      "data": {
+        "id": 1,
+        "name": "Mail Server 1",
+        "description": "Primary Exchange server",
+        "serviceId": 1,
+        "siteId": 1,
+        "type": "Server",
+        "vendor": "Dell",
+        "model": "PowerEdge R740",
+        "serialNumber": "DELLT78EXP102",
+        "purchaseDate": "2022-05-18",
+        "warrantyExpiry": "2025-05-18",
+        "criticality": "High",
+        "status": "Production",
+        "maintenanceWindow": "Sunday 01:00-05:00",
+        "lastMaintenanceDate": "2024-02-18",
+        "ipAddress": "10.10.1.15",
+        "osVersion": "Windows Server 2019",
+        "cpuCores": 16,
+        "memoryGB": 64,
+        "storageGB": 2000
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "id": 2,
+        "name": "Mail Server 2",
+        "description": "Secondary Exchange server",
+        "serviceId": 1,
+        "siteId": 2,
+        "type": "Server",
+        "vendor": "Dell",
+        "model": "PowerEdge R740",
+        "serialNumber": "DELLT78EXP103",
+        "purchaseDate": "2022-05-18",
+        "warrantyExpiry": "2025-05-18",
+        "criticality": "High",
+        "status": "Production",
+        "maintenanceWindow": "Sunday 01:00-05:00",
+        "lastMaintenanceDate": "2024-02-18",
+        "ipAddress": "10.20.1.15",
+        "osVersion": "Windows Server 2019",
+        "cpuCores": 16,
+        "memoryGB": 64,
+        "storageGB": 2000
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "id": 3,
+        "name": "Email Gateway",
+        "description": "Spam filtering and email security",
+        "serviceId": 1,
+        "siteId": 1,
+        "type": "Security Appliance",
+        "vendor": "Cisco",
+        "model": "ESA C690",
+        "serialNumber": "ESA690123456",
+        "purchaseDate": "2023-03-10",
+        "warrantyExpiry": "2026-03-10",
+        "criticality": "Medium",
+        "status": "Production",
+        "maintenanceWindow": "Sunday 01:00-05:00",
+        "lastMaintenanceDate": "2024-01-14",
+        "ipAddress": "10.10.1.25",
+        "osVersion": "AsyncOS 14.2",
+        "cpuCores": 8,
+        "memoryGB": 32,
+        "storageGB": 1000
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "id": 4,
+        "name": "ERP Database Server",
+        "description": "Primary SAP database",
+        "serviceId": 2,
+        "siteId": 1,
+        "type": "Database Server",
+        "vendor": "HP",
+        "model": "ProLiant DL380 Gen10",
+        "serialNumber": "HP380G10X7823",
+        "purchaseDate": "2021-11-05",
+        "warrantyExpiry": "2026-11-05",
+        "criticality": "Critical",
+        "status": "Production",
+        "maintenanceWindow": "Sunday 22:00-02:00",
+        "lastMaintenanceDate": "2024-02-25",
+        "ipAddress": "10.10.2.10",
+        "osVersion": "RHEL 8.5",
+        "cpuCores": 32,
+        "memoryGB": 256,
+        "storageGB": 8000
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "id": 5,
+        "name": "ERP App Server 1",
+        "description": "SAP application server",
+        "serviceId": 2,
+        "siteId": 1,
+        "type": "Application Server",
+        "vendor": "HP",
+        "model": "ProLiant DL360 Gen10",
+        "serialNumber": "HP360G10X8901",
+        "purchaseDate": "2021-11-05",
+        "warrantyExpiry": "2026-11-05",
+        "criticality": "High",
+        "status": "Production",
+        "maintenanceWindow": "Sunday 22:00-02:00",
+        "lastMaintenanceDate": "2024-02-25",
+        "ipAddress": "10.10.2.11",
+        "osVersion": "RHEL 8.5",
+        "cpuCores": 24,
+        "memoryGB": 128,
+        "storageGB": 1000
+      }
+    },
+    {
+      "id": "6",
+      "data": {
+        "id": 6,
+        "name": "ERP App Server 2",
+        "description": "SAP application server",
+        "serviceId": 2,
+        "siteId": 2,
+        "type": "Application Server",
+        "vendor": "HP",
+        "model": "ProLiant DL360 Gen10",
+        "serialNumber": "HP360G10X8902",
+        "purchaseDate": "2021-11-05",
+        "warrantyExpiry": "2026-11-05",
+        "criticality": "High",
+        "status": "Production",
+        "maintenanceWindow": "Sunday 22:00-02:00",
+        "lastMaintenanceDate": "2024-02-25",
+        "ipAddress": "10.20.2.11",
+        "osVersion": "RHEL 8.5",
+        "cpuCores": 24,
+        "memoryGB": 128,
+        "storageGB": 1000
+      }
+    },
+    {
+      "id": "7",
+      "data": {
+        "id": 7,
+        "name": "Salesforce Integration Server",
+        "description": "Integration middleware for CRM",
+        "serviceId": 3,
+        "siteId": 1,
+        "type": "Application Server",
+        "vendor": "Dell",
+        "model": "PowerEdge R640",
+        "serialNumber": "DELLT64EXP523",
+        "purchaseDate": "2022-08-15",
+        "warrantyExpiry": "2025-08-15",
+        "criticality": "Medium",
+        "status": "Production",
+        "maintenanceWindow": "Saturday 22:00-02:00",
+        "lastMaintenanceDate": "2024-01-27",
+        "ipAddress": "10.10.3.15",
+        "osVersion": "Windows Server 2019",
+        "cpuCores": 16,
+        "memoryGB": 64,
+        "storageGB": 1000
+      }
+    },
+    {
+      "id": "8",
+      "data": {
+        "id": 8,
+        "name": "Core Banking DB Cluster",
+        "description": "Main banking database cluster",
+        "serviceId": 4,
+        "siteId": 1,
+        "type": "Database Cluster",
+        "vendor": "Oracle",
+        "model": "Exadata X8M-2",
+        "serialNumber": "ORAEX8M2789456",
+        "purchaseDate": "2021-06-10",
+        "warrantyExpiry": "2026-06-10",
+        "criticality": "Critical",
+        "status": "Production",
+        "maintenanceWindow": "Sunday 02:00-06:00",
+        "lastMaintenanceDate": "2024-02-04",
+        "ipAddress": "10.10.4.10",
+        "osVersion": "Oracle Linux 8.4",
+        "cpuCores": 64,
+        "memoryGB": 512,
+        "storageGB": 20000
+      }
+    }
+  ],
+  "drDimensions": [
+    {
+      "id": "1",
+      "data": {
+        "id": 1,
+        "name": "Internal Support",
+        "description": "Internal IT support resources available",
+        "parameters": [
+          {
+            "id": 101,
+            "name": "Support Team Size",
+            "description": "Number of dedicated support staff",
+            "type": "numeric",
+            "scorable": true,
+            "weightage": 0.7
+          },
+          {
+            "id": 102,
+            "name": "Skill Coverage",
+            "description": "Coverage of required skills in support team",
+            "type": "percentage",
+            "scorable": true,
+            "weightage": 0.8
+          },
+          {
+            "id": 103,
+            "name": "24/7 Coverage",
+            "description": "Availability of round-the-clock support",
+            "type": "boolean",
+            "scorable": true,
+            "weightage": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "id": 2,
+        "name": "External Support",
+        "description": "Vendor and third-party support arrangements",
+        "parameters": [
+          {
+            "id": 201,
+            "name": "Vendor SLA",
+            "description": "Service level agreements with vendors",
+            "type": "options",
+            "options": ["None", "Basic", "Standard", "Premium", "Platinum"],
+            "scorable": true,
+            "weightage": 0.7
+          },
+          {
+            "id": 202,
+            "name": "Support Hours",
+            "description": "Vendor support availability hours",
+            "type": "options",
+            "options": ["Business hours only", "Extended hours", "24/7/365"],
+            "scorable": true,
+            "weightage": 0.6
+          },
+          {
+            "id": 203,
+            "name": "Response Time",
+            "description": "Guaranteed vendor response time for critical issues",
+            "type": "time",
+            "unit": "hours",
+            "scorable": true,
+            "weightage": 0.8
+          }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "id": 3,
+        "name": "Support Metrics",
+        "description": "Measurement and tracking of support effectiveness",
+        "parameters": [
+          {
+            "id": 301,
+            "name": "MTTR",
+            "description": "Mean Time To Resolve critical incidents",
+            "type": "time",
+            "unit": "hours",
+            "scorable": true,
+            "weightage": 0.9
+          },
+          {
+            "id": 302,
+            "name": "First Contact Resolution",
+            "description": "Percentage of issues resolved on first contact",
+            "type": "percentage",
+            "scorable": true,
+            "weightage": 0.5
+          },
+          {
+            "id": 303,
+            "name": "Ticket Backlog",
+            "description": "Average number of open support tickets",
+            "type": "numeric",
+            "scorable": true,
+            "weightage": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "id": 4,
+        "name": "Redundancy",
+        "description": "Redundant systems and components",
+        "parameters": [
+          {
+            "id": 401,
+            "name": "Component Redundancy",
+            "description": "Redundancy of critical hardware components",
+            "type": "percentage",
+            "scorable": true,
+            "weightage": 0.8
+          },
+          {
+            "id": 402,
+            "name": "Failover Testing",
+            "description": "Frequency of failover testing",
+            "type": "options",
+            "options": ["Never", "Annually", "Bi-annually", "Quarterly", "Monthly"],
+            "scorable": true,
+            "weightage": 0.7
+          },
+          {
+            "id": 403,
+            "name": "Geographic Redundancy",
+            "description": "Availability in multiple geographic locations",
+            "type": "boolean",
+            "scorable": true,
+            "weightage": 0.9
+          }
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "id": 5,
+        "name": "Inventory Management",
+        "description": "Management of spare parts and equipment",
+        "parameters": [
+          {
+            "id": 501,
+            "name": "Spare Parts Inventory",
+            "description": "Availability of critical spare parts",
+            "type": "percentage",
+            "scorable": true,
+            "weightage": 0.6
+          },
+          {
+            "id": 502,
+            "name": "Inventory Tracking",
+            "description": "System for tracking inventory and usage",
+            "type": "options",
+            "options": ["None", "Manual", "Basic Digital", "Advanced Digital"],
+            "scorable": true,
+            "weightage": 0.5
+          },
+          {
+            "id": 503,
+            "name": "Refresh Cycle",
+            "description": "Regular refresh cycle for equipment",
+            "type": "time",
+            "unit": "years",
+            "scorable": true,
+            "weightage": 0.7
+          }
+        ]
+      }
+    },
+    {
+      "id": "6",
+      "data": {
+        "id": 6,
+        "name": "Alerting",
+        "description": "Systems for alerting and notification",
+        "parameters": [
+          {
+            "id": 601,
+            "name": "Alert Coverage",
+            "description": "Percentage of systems with alert monitoring",
+            "type": "percentage",
+            "scorable": true,
+            "weightage": 0.8
+          },
+          {
+            "id": 602,
+            "name": "Alert Channels",
+            "description": "Number of different alert notification channels",
+            "type": "numeric",
+            "scorable": true,
+            "weightage": 0.5
+          },
+          {
+            "id": 603,
+            "name": "Alert Response Time",
+            "description": "Average time to respond to critical alerts",
+            "type": "time",
+            "unit": "minutes",
+            "scorable": true,
+            "weightage": 0.9
+          }
+        ]
+      }
+    },
+    {
+      "id": "7",
+      "data": {
+        "id": 7,
+        "name": "Monitoring",
+        "description": "Monitoring of systems and services",
+        "parameters": [
+          {
+            "id": 701,
+            "name": "Monitoring Coverage",
+            "description": "Percentage of systems with active monitoring",
+            "type": "percentage",
+            "scorable": true,
+            "weightage": 0.8
+          },
+          {
+            "id": 702,
+            "name": "Monitoring Depth",
+            "description": "Depth of monitoring beyond basic up/down",
+            "type": "options",
+            "options": ["Basic", "Standard", "Advanced", "Comprehensive"],
+            "scorable": true,
+            "weightage": 0.7
+          },
+          {
+            "id": 703,
+            "name": "Monitoring Review",
+            "description": "Frequency of monitoring system review",
+            "type": "options",
+            "options": ["Never", "Annually", "Quarterly", "Monthly", "Weekly"],
+            "scorable": true,
+            "weightage": 0.6
+          }
+        ]
+      }
+    },
+    {
+      "id": "8",
+      "data": {
+        "id": 8,
+        "name": "Maintenance",
+        "description": "Preventive and scheduled maintenance",
+        "parameters": [
+          {
+            "id": 801,
+            "name": "Maintenance Schedule",
+            "description": "Existence of regular maintenance schedule",
+            "type": "boolean",
+            "scorable": true,
+            "weightage": 0.7
+          },
+          {
+            "id": 802,
+            "name": "Maintenance Compliance",
+            "description": "Compliance with scheduled maintenance",
+            "type": "percentage",
+            "scorable": true,
+            "weightage": 0.8
+          },
+          {
+            "id": 803,
+            "name": "Patch Management",
+            "description": "Timeliness of security and functional patches",
+            "type": "options",
+            "options": ["Ad-hoc", "Delayed", "Regular", "Immediate"],
+            "scorable": true,
+            "weightage": 0.9
+          }
+        ]
+      }
+    },
+    {
+      "id": "9",
+      "data": {
+        "id": 9,
+        "name": "Testing",
+        "description": "DR and recovery testing",
+        "parameters": [
+          {
+            "id": 901,
+            "name": "DR Testing Frequency",
+            "description": "How often DR testing is performed",
+            "type": "options",
+            "options": ["Never", "Every 2+ years", "Annually", "Bi-annually", "Quarterly"],
+            "scorable": true,
+            "weightage": 0.9
+          },
+          {
+            "id": 902,
+            "name": "Testing Scope",
+            "description": "Scope of systems included in DR testing",
+            "type": "percentage",
+            "scorable": true,
+            "weightage": 0.8
+          },
+          {
+            "id": 903,
+            "name": "Test Documentation",
+            "description": "Quality of test plans and results documentation",
+            "type": "options",
+            "options": ["None", "Basic", "Standard", "Comprehensive"],
+            "scorable": true,
+            "weightage": 0.6
+          }
+        ]
+      }
+    }
+  ],
+  "siteMaturityBreakdowns": [
+    {
+      "id": "1",
+      "data": {
+        "siteId": 1,
+        "siteName": "London HQ",
+        "city": "London",
+        "country": "United Kingdom",
+        "tier": "Tier 1",
+        "overallScore": 3.8,
+        "dimensions": [
+          { "dimension": "Internal Support", "score": 4.2 },
+          { "dimension": "External Support", "score": 3.9 },
+          { "dimension": "Support Metrics", "score": 3.5 },
+          { "dimension": "Redundancy", "score": 4.3 },
+          { "dimension": "Inventory Management", "score": 3.6 },
+          { "dimension": "Alerting", "score": 4.0 },
+          { "dimension": "Monitoring", "score": 3.7 },
+          { "dimension": "Maintenance", "score": 3.6 },
+          { "dimension": "Testing", "score": 3.5 }
+        ],
+        "services": [
+          {
+            "serviceId": 1,
+            "overallScore": 3.9,
+            "dimensionScores": [
+              { "dimension": "Internal Support", "score": 4.2 },
+              { "dimension": "External Support", "score": 4.0 },
+              { "dimension": "Support Metrics", "score": 3.5 },
+              { "dimension": "Redundancy", "score": 4.3 },
+              { "dimension": "Inventory Management", "score": 3.6 },
+              { "dimension": "Alerting", "score": 4.2 },
+              { "dimension": "Monitoring", "score": 3.8 },
+              { "dimension": "Maintenance", "score": 3.7 },
+              { "dimension": "Testing", "score": 3.6 }
+            ]
+          },
+          {
+            "serviceId": 2,
+            "overallScore": 4.1,
+            "dimensionScores": [
+              { "dimension": "Internal Support", "score": 4.3 },
+              { "dimension": "External Support", "score": 4.2 },
+              { "dimension": "Support Metrics", "score": 3.8 },
+              { "dimension": "Redundancy", "score": 4.4 },
+              { "dimension": "Inventory Management", "score": 3.9 },
+              { "dimension": "Alerting", "score": 4.3 },
+              { "dimension": "Monitoring", "score": 4.0 },
+              { "dimension": "Maintenance", "score": 4.0 },
+              { "dimension": "Testing", "score": 4.0 }
+            ]
+          },
+          {
+            "serviceId": 4,
+            "overallScore": 4.3,
+            "dimensionScores": [
+              { "dimension": "Internal Support", "score": 4.5 },
+              { "dimension": "External Support", "score": 4.4 },
+              { "dimension": "Support Metrics", "score": 4.2 },
+              { "dimension": "Redundancy", "score": 4.5 },
+              { "dimension": "Inventory Management", "score": 4.0 },
+              { "dimension": "Alerting", "score": 4.5 },
+              { "dimension": "Monitoring", "score": 4.3 },
+              { "dimension": "Maintenance", "score": 4.2 },
+              { "dimension": "Testing", "score": 4.2 }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "siteId": 2,
+        "siteName": "New York Office",
+        "city": "New York",
+        "country": "United States",
+        "tier": "Tier 1",
+        "overallScore": 3.5,
+        "dimensions": [
+          { "dimension": "Internal Support", "score": 3.8 },
+          { "dimension": "External Support", "score": 3.7 },
+          { "dimension": "Support Metrics", "score": 3.2 },
+          { "dimension": "Redundancy", "score": 3.9 },
+          { "dimension": "Inventory Management", "score": 3.4 },
+          { "dimension": "Alerting", "score": 3.7 },
+          { "dimension": "Monitoring", "score": 3.5 },
+          { "dimension": "Maintenance", "score": 3.3 },
+          { "dimension": "Testing", "score": 3.0 }
+        ],
+        "services": [
+          {
+            "serviceId": 1,
+            "overallScore": 3.6,
+            "dimensionScores": [
+              { "dimension": "Internal Support", "score": 3.9 },
+              { "dimension": "External Support", "score": 3.8 },
+              { "dimension": "Support Metrics", "score": 3.3 },
+              { "dimension": "Redundancy", "score": 4.0 },
+              { "dimension": "Inventory Management", "score": 3.5 },
+              { "dimension": "Alerting", "score": 3.8 },
+              { "dimension": "Monitoring", "score": 3.6 },
+              { "dimension": "Maintenance", "score": 3.4 },
+              { "dimension": "Testing", "score": 3.1 }
+            ]
+          },
+          {
+            "serviceId": 3,
+            "overallScore": 3.8,
+            "dimensionScores": [
+              { "dimension": "Internal Support", "score": 4.1 },
+              { "dimension": "External Support", "score": 4.0 },
+              { "dimension": "Support Metrics", "score": 3.5 },
+              { "dimension": "Redundancy", "score": 4.2 },
+              { "dimension": "Inventory Management", "score": 3.7 },
+              { "dimension": "Alerting", "score": 4.0 },
+              { "dimension": "Monitoring", "score": 3.8 },
+              { "dimension": "Maintenance", "score": 3.6 },
+              { "dimension": "Testing", "score": 3.3 }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "siteId": 3,
+        "siteName": "Singapore Hub",
+        "city": "Singapore",
+        "country": "Singapore",
+        "tier": "Tier 2",
+        "overallScore": 4.2,
+        "dimensions": [
+          { "dimension": "Internal Support", "score": 4.5 },
+          { "dimension": "External Support", "score": 4.4 },
+          { "dimension": "Support Metrics", "score": 4.0 },
+          { "dimension": "Redundancy", "score": 4.6 },
+          { "dimension": "Inventory Management", "score": 4.1 },
+          { "dimension": "Alerting", "score": 4.3 },
+          { "dimension": "Monitoring", "score": 4.2 },
+          { "dimension": "Maintenance", "score": 4.0 },
+          { "dimension": "Testing", "score": 3.8 }
+        ],
+        "services": [
+          {
+            "serviceId": 1,
+            "overallScore": 4.3,
+            "dimensionScores": [
+              { "dimension": "Internal Support", "score": 4.6 },
+              { "dimension": "External Support", "score": 4.5 },
+              { "dimension": "Support Metrics", "score": 4.1 },
+              { "dimension": "Redundancy", "score": 4.7 },
+              { "dimension": "Inventory Management", "score": 4.2 },
+              { "dimension": "Alerting", "score": 4.4 },
+              { "dimension": "Monitoring", "score": 4.3 },
+              { "dimension": "Maintenance", "score": 4.1 },
+              { "dimension": "Testing", "score": 3.9 }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "maturityTrendData": [
+    {
+      "id": "1",
+      "data": {
+        "siteId": 1,
+        "date": "2023-09-01",
+        "score": 3.2,
+        "dimensions": [
+          { "dimension": "Internal Support", "score": 3.5 },
+          { "dimension": "External Support", "score": 3.4 },
+          { "dimension": "Support Metrics", "score": 3.0 },
+          { "dimension": "Redundancy", "score": 3.6 },
+          { "dimension": "Inventory Management", "score": 3.0 },
+          { "dimension": "Alerting", "score": 3.3 },
+          { "dimension": "Monitoring", "score": 3.1 },
+          { "dimension": "Maintenance", "score": 3.0 },
+          { "dimension": "Testing", "score": 2.8 }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "siteId": 1,
+        "date": "2023-11-01",
+        "score": 3.4,
+        "dimensions": [
+          { "dimension": "Internal Support", "score": 3.7 },
+          { "dimension": "External Support", "score": 3.6 },
+          { "dimension": "Support Metrics", "score": 3.2 },
+          { "dimension": "Redundancy", "score": 3.8 },
+          { "dimension": "Inventory Management", "score": 3.2 },
+          { "dimension": "Alerting", "score": 3.5 },
+          { "dimension": "Monitoring", "score": 3.3 },
+          { "dimension": "Maintenance", "score": 3.2 },
+          { "dimension": "Testing", "score": 3.0 }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "siteId": 1,
+        "date": "2024-01-01",
+        "score": 3.6,
+        "dimensions": [
+          { "dimension": "Internal Support", "score": 3.9 },
+          { "dimension": "External Support", "score": 3.8 },
+          { "dimension": "Support Metrics", "score": 3.4 },
+          { "dimension": "Redundancy", "score": 4.0 },
+          { "dimension": "Inventory Management", "score": 3.4 },
+          { "dimension": "Alerting", "score": 3.7 },
+          { "dimension": "Monitoring", "score": 3.5 },
+          { "dimension": "Maintenance", "score": 3.4 },
+          { "dimension": "Testing", "score": 3.2 }
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "siteId": 1,
+        "date": "2024-03-01",
+        "score": 3.8,
+        "dimensions": [
+          { "dimension": "Internal Support", "score": 4.2 },
+          { "dimension": "External Support", "score": 3.9 },
+          { "dimension": "Support Metrics", "score": 3.5 },
+          { "dimension": "Redundancy", "score": 4.3 },
+          { "dimension": "Inventory Management", "score": 3.6 },
+          { "dimension": "Alerting", "score": 4.0 },
+          { "dimension": "Monitoring", "score": 3.7 },
+          { "dimension": "Maintenance", "score": 3.6 },
+          { "dimension": "Testing", "score": 3.5 }
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "siteId": 2,
+        "date": "2023-09-01",
+        "score": 3.0,
+        "dimensions": [
+          { "dimension": "Internal Support", "score": 3.3 },
+          { "dimension": "External Support", "score": 3.2 },
+          { "dimension": "Support Metrics", "score": 2.7 },
+          { "dimension": "Redundancy", "score": 3.4 },
+          { "dimension": "Inventory Management", "score": 2.9 },
+          { "dimension": "Alerting", "score": 3.2 },
+          { "dimension": "Monitoring", "score": 3.0 },
+          { "dimension": "Maintenance", "score": 2.8 },
+          { "dimension": "Testing", "score": 2.5 }
+        ]
+      }
+    },
+    {
+      "id": "6",
+      "data": {
+        "siteId": 2,
+        "date": "2023-11-01",
+        "score": 3.2,
+        "dimensions": [
+          { "dimension": "Internal Support", "score": 3.5 },
+          { "dimension": "External Support", "score": 3.4 },
+          { "dimension": "Support Metrics", "score": 2.9 },
+          { "dimension": "Redundancy", "score": 3.6 },
+          { "dimension": "Inventory Management", "score": 3.1 },
+          { "dimension": "Alerting", "score": 3.4 },
+          { "dimension": "Monitoring", "score": 3.2 },
+          { "dimension": "Maintenance", "score": 3.0 },
+          { "dimension": "Testing", "score": 2.7 }
+        ]
+      }
+    },
+    {
+      "id": "7",
+      "data": {
+        "siteId": 2,
+        "date": "2024-01-01",
+        "score": 3.4,
+        "dimensions": [
+          { "dimension": "Internal Support", "score": 3.7 },
+          { "dimension": "External Support", "score": 3.6 },
+          { "dimension": "Support Metrics", "score": 3.1 },
+          { "dimension": "Redundancy", "score": 3.8 },
+          { "dimension": "Inventory Management", "score": 3.3 },
+          { "dimension": "Alerting", "score": 3.6 },
+          { "dimension": "Monitoring", "score": 3.4 },
+          { "dimension": "Maintenance", "score": 3.2 },
+          { "dimension": "Testing", "score": 2.9 }
+        ]
+      }
+    },
+    {
+      "id": "8",
+      "data": {
+        "siteId": 2,
+        "date": "2024-03-01",
+        "score": 3.5,
+        "dimensions": [
+          { "dimension": "Internal Support", "score": 3.8 },
+          { "dimension": "External Support", "score": 3.7 },
+          { "dimension": "Support Metrics", "score": 3.2 },
+          { "dimension": "Redundancy", "score": 3.9 },
+          { "dimension": "Inventory Management", "score": 3.4 },
+          { "dimension": "Alerting", "score": 3.7 },
+          { "dimension": "Monitoring", "score": 3.5 },
+          { "dimension": "Maintenance", "score": 3.3 },
+          { "dimension": "Testing", "score": 3.0 }
+        ]
+      }
+    },
+    {
+      "id": "9",
+      "data": {
+        "siteId": 3,
+        "date": "2023-09-01",
+        "score": 3.8,
+        "dimensions": [
+          { "dimension": "Internal Support", "score": 4.1 },
+          { "dimension": "External Support", "score": 4.0 },
+          { "dimension": "Support Metrics", "score": 3.6 },
+          { "dimension": "Redundancy", "score": 4.2 },
+          { "dimension": "Inventory Management", "score": 3.7 },
+          { "dimension": "Alerting", "score": 3.9 },
+          { "dimension": "Monitoring", "score": 3.8 },
+          { "dimension": "Maintenance", "score": 3.6 },
+          { "dimension": "Testing", "score": 3.4 }
+        ]
+      }
+    },
+    {
+      "id": "10",
+      "data": {
+        "siteId": 3,
+        "date": "2023-11-01",
+        "score": 4.0,
+        "dimensions": [
+          { "dimension": "Internal Support", "score": 4.3 },
+          { "dimension": "External Support", "score": 4.2 },
+          { "dimension": "Support Metrics", "score": 3.8 },
+          { "dimension": "Redundancy", "score": 4.4 },
+          { "dimension": "Inventory Management", "score": 3.9 },
+          { "dimension": "Alerting", "score": 4.1 },
+          { "dimension": "Monitoring", "score": 4.0 },
+          { "dimension": "Maintenance", "score": 3.8 },
+          { "dimension": "Testing", "score": 3.6 }
+        ]
+      }
+    },
+    {
+      "id": "11",
+      "data": {
+        "siteId": 3,
+        "date": "2024-01-01",
+        "score": 4.1,
+        "dimensions": [
+          { "dimension": "Internal Support", "score": 4.4 },
+          { "dimension": "External Support", "score": 4.3 },
+          { "dimension": "Support Metrics", "score": 3.9 },
+          { "dimension": "Redundancy", "score": 4.5 },
+          { "dimension": "Inventory Management", "score": 4.0 },
+          { "dimension": "Alerting", "score": 4.2 },
+          { "dimension": "Monitoring", "score": 4.1 },
+          { "dimension": "Maintenance", "score": 3.9 },
+          { "dimension": "Testing", "score": 3.7 }
+        ]
+      }
+    },
+    {
+      "id": "12",
+      "data": {
+        "siteId": 3,
+        "date": "2024-03-01",
+        "score": 4.2,
+        "dimensions": [
+          { "dimension": "Internal Support", "score": 4.5 },
+          { "dimension": "External Support", "score": 4.4 },
+          { "dimension": "Support Metrics", "score": 4.0 },
+          { "dimension": "Redundancy", "score": 4.6 },
+          { "dimension": "Inventory Management", "score": 4.1 },
+          { "dimension": "Alerting", "score": 4.3 },
+          { "dimension": "Monitoring", "score": 4.2 },
+          { "dimension": "Maintenance", "score": 4.0 },
+          { "dimension": "Testing", "score": 3.8 }
+        ]
+      }
+    }
+  ],
+  "risksData": [
+    {
+      "id": "1",
+      "data": {
+        "id": 1,
+        "title": "Single Point of Failure in Core Network",
+        "description": "No redundancy in core switches",
+        "impact": "High",
+        "likelihood": "Medium",
+        "status": "Open",
+        "siteId": 1,
+        "openedDate": "2024-01-15T00:00:00Z",
+        "dueDate": "2024-06-30T00:00:00Z",
+        "complexity": "High",
+        "type": "Technical",
+        "owner": "John Smith"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "id": 2,
+        "title": "Outdated UPS Batteries",
+        "description": "UPS batteries are past their recommended replacement date",
+        "impact": "High",
+        "likelihood": "High",
+        "status": "Open",
+        "siteId": 1,
+        "openedDate": "2024-02-10T00:00:00Z",
+        "dueDate": "2024-05-20T00:00:00Z",
+        "complexity": "Medium",
+        "type": "Operational",
+        "owner": "Sarah Johnson"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "id": 3,
+        "title": "Limited Internet Redundancy",
+        "description": "Only one ISP connection available",
+        "impact": "Medium",
+        "likelihood": "Medium",
+        "status": "Open",
+        "siteId": 2,
+        "openedDate": "2023-11-08T00:00:00Z",
+        "dueDate": "2024-07-15T00:00:00Z",
+        "complexity": "Medium",
+        "type": "Strategic",
+        "owner": "Michael Brown"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "id": 4,
+        "title": "Database Backup Validation",
+        "description": "Lack of regular validation testing of database backups",
+        "impact": "High",
+        "likelihood": "Low",
+        "status": "Open",
+        "siteId": 3,
+        "openedDate": "2024-02-28T00:00:00Z",
+        "dueDate": "2024-08-01T00:00:00Z",
+        "complexity": "High",
+        "type": "Technical",
+        "owner": "Patricia Davis"
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "id": 5,
+        "title": "DR Plan Documentation Outdated",
+        "description": "DR plan documentation has not been updated in 18 months",
+        "impact": "Medium",
+        "likelihood": "Medium",
+        "status": "Open",
+        "siteId": 4,
+        "openedDate": "2024-03-10T00:00:00Z",
+        "dueDate": "2024-06-15T00:00:00Z",
+        "complexity": "Low",
+        "type": "Operational",
+        "owner": "Robert Wilson"
+      }
+    }
+  ],
+  "issuesData": [
+    {
+      "id": "1",
+      "data": {
+        "id": 1,
+        "title": "Intermittent Network Outages",
+        "description": "Users reporting random network disconnections",
+        "severity": "High",
+        "status": "In Progress",
+        "siteId": 1,
+        "openedDate": "2024-03-05T00:00:00Z",
+        "dueDate": "2024-05-15T00:00:00Z",
+        "complexity": "High",
+        "type": "Technical",
+        "owner": "Robert Davis"
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "id": 2,
+        "title": "Meeting Room AV Systems Unreliable",
+        "description": "Video conferencing systems failing during important meetings",
+        "severity": "Medium",
+        "status": "Open",
+        "siteId": 1,
+        "openedDate": "2024-02-18T00:00:00Z",
+        "dueDate": "2024-06-01T00:00:00Z",
+        "complexity": "Low",
+        "type": "Operational",
+        "owner": "Lisa Wilson"
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "id": 3,
+        "title": "WiFi Dead Zones on 3rd Floor",
+        "description": "No wireless coverage in northeast corner",
+        "severity": "Medium",
+        "status": "Open",
+        "siteId": 2,
+        "openedDate": "2024-01-22T00:00:00Z",
+        "dueDate": "2024-05-28T00:00:00Z",
+        "complexity": "Medium",
+        "type": "Technical",
+        "owner": "James Taylor"
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "id": 4,
+        "title": "Email Delivery Delays",
+        "description": "Emails taking up to 30 minutes to deliver internally",
+        "severity": "High",
+        "status": "In Progress",
+        "siteId": 3,
+        "openedDate": "2024-03-12T00:00:00Z",
+        "dueDate": "2024-04-10T00:00:00Z",
+        "complexity": "Medium",
+        "type": "Technical",
+        "owner": "Emma Jones"
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "id": 5,
+        "title": "File Server Storage Critical",
+        "description": "Primary file server at 98% capacity",
+        "severity": "Critical",
+        "status": "Open",
+        "siteId": 4,
+        "openedDate": "2024-03-15T00:00:00Z",
+        "dueDate": "2024-04-05T00:00:00Z",
+        "complexity": "Medium",
+        "type": "Technical",
+        "owner": "Daniel Williams"
+      }
+    }
+  ],
+  "drParameters": [
+    {
+      "id": "1",
+      "data": {
+        "id": 1,
+        "name": "Recovery Time Objective (RTO)",
+        "description": "Maximum allowable time to restore service after disaster",
+        "unit": "hours",
+        "businessUnit": "All",
+        "parameters": [
+          {
+            "serviceId": 1,
+            "value": "4",
+            "notes": "Based on business impact analysis"
+          },
+          {
+            "serviceId": 2,
+            "value": "2",
+            "notes": "Critical for business operations"
+          },
+          {
+            "serviceId": 3,
+            "value": "4",
+            "notes": "Moderate business impact if unavailable"
+          },
+          {
+            "serviceId": 4,
+            "value": "1",
+            "notes": "Highest criticality due to financial impact"
+          },
+          {
+            "serviceId": 5,
+            "value": "8",
+            "notes": "Lower priority system"
+          },
+          {
+            "serviceId": 6,
+            "value": "2",
+            "notes": "Required for all other systems to function"
+          },
+          {
+            "serviceId": 7,
+            "value": "1",
+            "notes": "Direct revenue impact"
+          },
+          {
+            "serviceId": 8,
+            "value": "8",
+            "notes": "Non-critical for immediate operations"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "data": {
+        "id": 2,
+        "name": "Recovery Point Objective (RPO)",
+        "description": "Maximum acceptable data loss in time",
+        "unit": "minutes",
+        "businessUnit": "All",
+        "parameters": [
+          {
+            "serviceId": 1,
+            "value": "15",
+            "notes": "Email data is important but not transactional"
+          },
+          {
+            "serviceId": 2,
+            "value": "5",
+            "notes": "Near real-time replication required"
+          },
+          {
+            "serviceId": 3,
+            "value": "30",
+            "notes": "Customer data is synced from other systems"
+          },
+          {
+            "serviceId": 4,
+            "value": "0",
+            "notes": "Zero data loss acceptable for banking"
+          },
+          {
+            "serviceId": 5,
+            "value": "60",
+            "notes": "Voice logs retained but not critical"
+          },
+          {
+            "serviceId": 6,
+            "value": "15",
+            "notes": "Authentication data must be current"
+          },
+          {
+            "serviceId": 7,
+            "value": "0",
+            "notes": "Financial transactions must not be lost"
+          },
+          {
+            "serviceId": 8,
+            "value": "1440",
+            "notes": "Daily backups sufficient"
+          }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "data": {
+        "id": 3,
+        "name": "Maximum Tolerable Downtime (MTD)",
+        "description": "Maximum time system can be down before severe business impact",
+        "unit": "hours",
+        "businessUnit": "All",
+        "parameters": [
+          {
+            "serviceId": 1,
+            "value": "8",
+            "notes": "Email alternatives available short-term"
+          },
+          {
+            "serviceId": 2,
+            "value": "4",
+            "notes": "Business severely impacted after 4 hours"
+          },
+          {
+            "serviceId": 3,
+            "value": "12",
+            "notes": "Sales can operate offline for limited time"
+          },
+          {
+            "serviceId": 4,
+            "value": "2",
+            "notes": "Regulatory requirements mandate quick recovery"
+          },
+          {
+            "serviceId": 5,
+            "value": "24",
+            "notes": "Alternative communication methods available"
+          },
+          {
+            "serviceId": 6,
+            "value": "4",
+            "notes": "All systems dependent on authentication"
+          },
+          {
+            "serviceId": 7,
+            "value": "4",
+            "notes": "Payment alternatives exist but limited"
+          },
+          {
+            "serviceId": 8,
+            "value": "48",
+            "notes": "HR functions can be manual temporarily"
+          }
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "data": {
+        "id": 4,
+        "name": "Work Recovery Time (WRT)",
+        "description": "Time needed for verification and testing after recovery",
+        "unit": "hours",
+        "businessUnit": "All",
+        "parameters": [
+          {
+            "serviceId": 1,
+            "value": "2",
+            "notes": "Validation of mail flow required"
+          },
+          {
+            "serviceId": 2,
+            "value": "3",
+            "notes": "Complex system requires thorough testing"
+          },
+          {
+            "serviceId": 3,
+            "value": "2",
+            "notes": "Data validation important for customer records"
+          },
+          {
+            "serviceId": 4,
+            "value": "4",
+            "notes": "Financial reconciliation necessary"
+          },
+          {
+            "serviceId": 5,
+            "value": "1",
+            "notes": "Simple service verification only"
+          },
+          {
+            "serviceId": 6,
+            "value": "2",
+            "notes": "User access testing required"
+          },
+          {
+            "serviceId": 7,
+            "value": "2",
+            "notes": "Transaction verification critical"
+          },
+          {
+            "serviceId": 8,
+            "value": "4",
+            "notes": "Data integrity checking needed"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "data": {
+        "id": 5,
+        "name": "Maximum Tolerable Period of Disruption (MTPD)",
+        "description": "Maximum time before business failure occurs",
+        "unit": "hours",
+        "businessUnit": "All",
+        "parameters": [
+          {
+            "serviceId": 1,
+            "value": "24",
+            "notes": "Communication alternatives exist"
+          },
+          {
+            "serviceId": 2,
+            "value": "12",
+            "notes": "Core business operations dependent"
+          },
+          {
+            "serviceId": 3,
+            "value": "48",
+            "notes": "Sales impact grows over time"
+          },
+          {
+            "serviceId": 4,
+            "value": "8",
+            "notes": "Regulatory and customer impact"
+          },
+          {
+            "serviceId": 5,
+            "value": "72",
+            "notes": "Alternative communication methods viable"
+          },
+          {
+            "serviceId": 6,
+            "value": "12",
+            "notes": "All systems depend on authentication"
+          },
+          {
+            "serviceId": 7,
+            "value": "12",
+            "notes": "Revenue directly impacted"
+          },
+          {
+            "serviceId": 8,
+            "value": "120",
+            "notes": "HR functions can temporarily be manual"
+          }
+        ]
+      }
+    }
+  ]
+}

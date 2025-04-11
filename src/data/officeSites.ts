@@ -1,0 +1,396 @@
+
+export interface Site {
+  id: number;
+  name: string;
+  address: string;
+  city: string;
+  country: string;
+  contactName: string;
+  contactEmail: string;
+  contactPhone: string;
+  type: string;
+  notes: string;
+  tier?: string;
+}
+
+export const officeSites: Site[] = [
+  {
+    id: 1,
+    name: "Kaleidoscope",
+    address: "Central London",
+    city: "London",
+    country: "United Kingdom",
+    contactName: "Jane Smith",
+    contactEmail: "jane.smith@example.com",
+    contactPhone: "+44 20 1234 5678",
+    type: "Office",
+    notes: "Central London location",
+    tier: "Tier 1"
+  },
+  {
+    id: 2,
+    name: "London Soho Works 180 Strand",
+    address: "180 Strand",
+    city: "London",
+    country: "United Kingdom",
+    contactName: "John Brown",
+    contactEmail: "john.brown@example.com",
+    contactPhone: "+44 20 2345 6789",
+    type: "Office",
+    notes: "Soho location",
+    tier: "Tier 1"
+  },
+  {
+    id: 3,
+    name: "London Hylo",
+    address: "Hylo Building",
+    city: "London",
+    country: "United Kingdom",
+    contactName: "Sarah Johnson",
+    contactEmail: "sarah.johnson@example.com",
+    contactPhone: "+44 20 3456 7890",
+    type: "Office",
+    notes: "Modern office building",
+    tier: "Tier 1"
+  },
+  {
+    id: 4,
+    name: "London Wework-Merchant Square",
+    address: "Merchant Square",
+    city: "London",
+    country: "United Kingdom",
+    contactName: "Michael Davis",
+    contactEmail: "michael.davis@example.com",
+    contactPhone: "+44 20 4567 8901",
+    type: "Coworking",
+    notes: "WeWork location",
+    tier: "Tier 1"
+  },
+  {
+    id: 5,
+    name: "Dublin The Sorting Office (TSO)",
+    address: "The Sorting Office",
+    city: "Dublin",
+    country: "Ireland",
+    contactName: "Emma Wilson",
+    contactEmail: "emma.wilson@example.com",
+    contactPhone: "+353 1 234 5678",
+    type: "Office",
+    notes: "Historic building",
+    tier: "Tier 1"
+  },
+  {
+    id: 6,
+    name: "Dublin WeWork Iveagh Court",
+    address: "Iveagh Court",
+    city: "Dublin",
+    country: "Ireland",
+    contactName: "Robert Murphy",
+    contactEmail: "robert.murphy@example.com",
+    contactPhone: "+353 1 345 6789",
+    type: "Coworking",
+    notes: "WeWork location",
+    tier: "Tier 1"
+  },
+  {
+    id: 7,
+    name: "Dubai Business Central Towers",
+    address: "Business Central Towers",
+    city: "Dubai",
+    country: "United Emirates",
+    contactName: "Aisha Mohammed",
+    contactEmail: "aisha.mohammed@example.com",
+    contactPhone: "+971 4 123 4567",
+    type: "Office",
+    notes: "Central business district",
+    tier: "Tier 1"
+  },
+  {
+    id: 8,
+    name: "Dubai New building (INJAZ)",
+    address: "INJAZ Tower",
+    city: "Dubai",
+    country: "United Emirates",
+    contactName: "Omar Khan",
+    contactEmail: "omar.khan@example.com",
+    contactPhone: "+971 4 234 5678",
+    type: "Office",
+    notes: "New construction",
+    tier: "Tier 2"
+  },
+  {
+    id: 9,
+    name: "Casablanca Regus-CASA TWIN TOWER CENTER",
+    address: "CASA TWIN TOWER CENTER",
+    city: "Casablanca",
+    country: "Morocco",
+    contactName: "Fatima Benali",
+    contactEmail: "fatima.benali@example.com",
+    contactPhone: "+212 522 123 456",
+    type: "Coworking",
+    notes: "Regus location",
+    tier: "Tier 1"
+  },
+  {
+    id: 10,
+    name: "Casablanca-Settat KOWORK ANFA PLACE",
+    address: "KOWORK ANFA PLACE",
+    city: "Casablanca",
+    country: "Morocco",
+    contactName: "Youssef El Mansouri",
+    contactEmail: "youssef.elmansouri@example.com",
+    contactPhone: "+212 522 234 567",
+    type: "Coworking",
+    notes: "Collaborative workspace",
+    tier: "Tier 1"
+  },
+  {
+    id: 11,
+    name: "Berlin Stralauer Allee 2",
+    address: "Stralauer Allee 2",
+    city: "Berlin",
+    country: "Germany",
+    contactName: "Hans Schmidt",
+    contactEmail: "hans.schmidt@example.com",
+    contactPhone: "+49 30 123 45678",
+    type: "Office",
+    notes: "River view",
+    tier: "Tier 1"
+  },
+  {
+    id: 12,
+    name: "Design Offices Munich Campus Königsplatz",
+    address: "Campus Königsplatz",
+    city: "Munich",
+    country: "Germany",
+    contactName: "Lena Wagner",
+    contactEmail: "lena.wagner@example.com",
+    contactPhone: "+49 89 123 45678",
+    type: "Office",
+    notes: "Design focused",
+    tier: "Tier 3"
+  },
+  {
+    id: 13,
+    name: "Mindspace Rödingsmarkt 9",
+    address: "Rödingsmarkt 9",
+    city: "Hamburg",
+    country: "Germany",
+    contactName: "Thomas Becker",
+    contactEmail: "thomas.becker@example.com",
+    contactPhone: "+49 40 123 45678",
+    type: "Coworking",
+    notes: "Creative space",
+    tier: "Tier 3"
+  },
+  {
+    id: 14,
+    name: "Paris 19 rue Poissonnière",
+    address: "19 rue Poissonnière",
+    city: "Paris",
+    country: "France",
+    contactName: "Sophie Dubois",
+    contactEmail: "sophie.dubois@example.com",
+    contactPhone: "+33 1 23 45 67 89",
+    type: "Office",
+    notes: "Historic building",
+    tier: "Tier 1"
+  },
+  {
+    id: 15,
+    name: "Amsterdam Edge Stadium",
+    address: "Edge Stadium",
+    city: "Amsterdam",
+    country: "Netherlands",
+    contactName: "Jan de Vries",
+    contactEmail: "jan.devries@example.com",
+    contactPhone: "+31 20 123 4567",
+    type: "Office",
+    notes: "Modern facility",
+    tier: "Tier 3"
+  },
+  {
+    id: 16,
+    name: "Istanbul Nida kule",
+    address: "Nida Kule",
+    city: "Istanbul",
+    country: "Turkey",
+    contactName: "Mehmet Yilmaz",
+    contactEmail: "mehmet.yilmaz@example.com",
+    contactPhone: "+90 212 123 4567",
+    type: "Office",
+    notes: "Central location",
+    tier: "Tier 2"
+  },
+  {
+    id: 17,
+    name: "Stockholm 7A",
+    address: "7A Building",
+    city: "Stockholm",
+    country: "Sweden",
+    contactName: "Erik Andersson",
+    contactEmail: "erik.andersson@example.com",
+    contactPhone: "+46 8 123 45 67",
+    type: "Office",
+    notes: "Nordic design",
+    tier: "Tier 3"
+  },
+  {
+    id: 18,
+    name: "Spaces Castellana 81, Madrid",
+    address: "Castellana 81",
+    city: "Madrid",
+    country: "Spain",
+    contactName: "Carlos Rodriguez",
+    contactEmail: "carlos.rodriguez@example.com",
+    contactPhone: "+34 91 123 45 67",
+    type: "Coworking",
+    notes: "Business district",
+    tier: "Tier 2"
+  },
+  {
+    id: 19,
+    name: "Johannesburg Wework-The Link",
+    address: "The Link Building",
+    city: "Johannesburg",
+    country: "South Africa",
+    contactName: "Thabo Mbeki",
+    contactEmail: "thabo.mbeki@example.com",
+    contactPhone: "+27 11 123 4567",
+    type: "Coworking",
+    notes: "WeWork location",
+    tier: "Tier 3"
+  },
+  {
+    id: 20,
+    name: "Business Front",
+    address: "Business Front Building",
+    city: "Riyadh",
+    country: "Saudi Arabia",
+    contactName: "Abdullah Al-Saud",
+    contactEmail: "abdullah.alsaud@example.com",
+    contactPhone: "+966 11 123 4567",
+    type: "Office",
+    notes: "Business center",
+    tier: "Tier 3"
+  },
+  {
+    id: 21,
+    name: "WeWork Browary II",
+    address: "Browary II",
+    city: "Warsaw",
+    country: "Poland",
+    contactName: "Piotr Kowalski",
+    contactEmail: "piotr.kowalski@example.com",
+    contactPhone: "+48 22 123 45 67",
+    type: "Coworking",
+    notes: "WeWork location",
+    tier: "Tier 2"
+  },
+  {
+    id: 22,
+    name: "Oslo Spaces Stortorvet",
+    address: "Stortorvet Square",
+    city: "Oslo",
+    country: "Norway",
+    contactName: "Ingrid Hansen",
+    contactEmail: "ingrid.hansen@example.com",
+    contactPhone: "+47 22 12 34 56",
+    type: "Coworking",
+    notes: "City center",
+    tier: "Tier 3"
+  },
+  {
+    id: 23,
+    name: "Lagos Africa Works",
+    address: "Africa Works Building",
+    city: "Lagos",
+    country: "Nigeria",
+    contactName: "Oluwaseun Adeyemi",
+    contactEmail: "oluwaseun.adeyemi@example.com",
+    contactPhone: "+234 1 234 5678",
+    type: "Office",
+    notes: "Modern facility",
+    tier: "Tier 3"
+  },
+  {
+    id: 24,
+    name: "WeWork Mazzini",
+    address: "Mazzini Street",
+    city: "Milano",
+    country: "Italy",
+    contactName: "Marco Rossi",
+    contactEmail: "marco.rossi@example.com",
+    contactPhone: "+39 02 1234 5678",
+    type: "Coworking",
+    notes: "WeWork location",
+    tier: "Tier 2"
+  },
+  {
+    id: 25,
+    name: "Cairo IST",
+    address: "IST Building",
+    city: "Cairo",
+    country: "Egypt",
+    contactName: "Ahmed Hassan",
+    contactEmail: "ahmed.hassan@example.com",
+    contactPhone: "+20 2 1234 5678",
+    type: "Office",
+    notes: "Tech hub",
+    tier: "Tier 3"
+  },
+  {
+    id: 26,
+    name: "DLA Piper Denmark",
+    address: "DLA Piper Building",
+    city: "Copenhagen",
+    country: "Denmark",
+    contactName: "Lars Nielsen",
+    contactEmail: "lars.nielsen@example.com",
+    contactPhone: "+45 33 12 34 56",
+    type: "Office",
+    notes: "Law firm",
+    tier: "Tier 3"
+  },
+  {
+    id: 27,
+    name: "Brussels Brussels",
+    address: "Brussels Center",
+    city: "Brussels",
+    country: "Belgium",
+    contactName: "Pierre Dupont",
+    contactEmail: "pierre.dupont@example.com",
+    contactPhone: "+32 2 123 45 67",
+    type: "Office",
+    notes: "EU district",
+    tier: "Tier 3"
+  },
+  {
+    id: 28,
+    name: "Almaty Regus Dialin House",
+    address: "Dialin House",
+    city: "Almaty",
+    country: "Kazakhstan",
+    contactName: "Aisha Nur",
+    contactEmail: "aisha.nur@example.com",
+    contactPhone: "+7 727 123 4567",
+    type: "Coworking",
+    notes: "Regus location",
+    tier: "Tier 3"
+  },
+  {
+    id: 29,
+    name: "Astana",
+    address: "Astana Center",
+    city: "Astana",
+    country: "Kazakhstan",
+    contactName: "Nursultan Nazarbayev",
+    contactEmail: "nursultan.nazarbayev@example.com",
+    contactPhone: "+7 717 123 4567",
+    type: "Office",
+    notes: "Government district",
+    tier: "Tier 3"
+  }
+];
+
+export default officeSites;

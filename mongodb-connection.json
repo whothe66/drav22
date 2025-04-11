@@ -1,0 +1,2612 @@
+{
+  "connection": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "drav-2",
+    "connectionString": "mongodb://localhost:27017/drav-2",
+    "localInterfaces": [
+      {
+        "name": "en0",
+        "address": "192.168.0.10",
+        "connectionString": "mongodb://192.168.0.10:27017/drav-2"
+      }
+    ]
+  },
+  "server": {
+    "version": "8.0.8",
+    "platform": "mongod",
+    "uptime": 8095,
+    "connections": {
+      "current": 13,
+      "available": 51187
+    }
+  },
+  "database": {
+    "name": "drav-2",
+    "collections": 12,
+    "documents": 72,
+    "dataSize": 35125,
+    "storageSize": 229376,
+    "indexes": 12,
+    "indexSize": 229376
+  },
+  "schema": {
+    "collections": [
+      {
+        "name": "users",
+        "documentCount": 0,
+        "fields": {},
+        "indexes": [
+          {
+            "name": "_id_",
+            "key": {
+              "_id": 1
+            },
+            "unique": false,
+            "sparse": false
+          }
+        ],
+        "relationships": [],
+        "sampleDocuments": []
+      },
+      {
+        "name": "risksData",
+        "documentCount": 5,
+        "fields": {
+          "id": "number",
+          "title": "string",
+          "description": "string",
+          "impact": "string",
+          "likelihood": "string",
+          "status": "string",
+          "siteId": "number",
+          "openedDate": "string",
+          "dueDate": "string",
+          "complexity": "string",
+          "type": "string",
+          "owner": "string"
+        },
+        "indexes": [
+          {
+            "name": "_id_",
+            "key": {
+              "_id": 1
+            },
+            "unique": false,
+            "sparse": false
+          }
+        ],
+        "relationships": [],
+        "sampleDocuments": [
+          {
+            "_id": "1",
+            "id": 1,
+            "title": "Single Point of Failure in Core Network",
+            "description": "No redundancy in core switches",
+            "impact": "High",
+            "likelihood": "Medium",
+            "status": "Open",
+            "siteId": 1,
+            "openedDate": "2024-01-15T00:00:00Z",
+            "dueDate": "2024-06-30T00:00:00Z",
+            "complexity": "High",
+            "type": "Technical",
+            "owner": "John Smith"
+          },
+          {
+            "_id": "2",
+            "id": 2,
+            "title": "Outdated UPS Batteries",
+            "description": "UPS batteries are past their recommended replacement date",
+            "impact": "High",
+            "likelihood": "High",
+            "status": "Open",
+            "siteId": 1,
+            "openedDate": "2024-02-10T00:00:00Z",
+            "dueDate": "2024-05-20T00:00:00Z",
+            "complexity": "Medium",
+            "type": "Operational",
+            "owner": "Sarah Johnson"
+          }
+        ]
+      },
+      {
+        "name": "lowestScoringSites",
+        "documentCount": 4,
+        "fields": {
+          "id": "number",
+          "name": "string",
+          "city": "string",
+          "country": "string",
+          "tier": "string",
+          "score": "number"
+        },
+        "indexes": [
+          {
+            "name": "_id_",
+            "key": {
+              "_id": 1
+            },
+            "unique": false,
+            "sparse": false
+          }
+        ],
+        "relationships": [],
+        "sampleDocuments": [
+          {
+            "_id": "1",
+            "id": 5,
+            "name": "Mumbai Branch",
+            "city": "Mumbai",
+            "country": "India",
+            "tier": "Tier 2",
+            "score": 2.3
+          },
+          {
+            "_id": "2",
+            "id": 4,
+            "name": "Berlin Office",
+            "city": "Berlin",
+            "country": "Germany",
+            "tier": "Tier 2",
+            "score": 2.7
+          }
+        ]
+      },
+      {
+        "name": "unassessedSites",
+        "documentCount": 5,
+        "fields": {
+          "id": "number",
+          "name": "string",
+          "city": "string",
+          "country": "string",
+          "tier": "string",
+          "lastAssessment": "string"
+        },
+        "indexes": [
+          {
+            "name": "_id_",
+            "key": {
+              "_id": 1
+            },
+            "unique": false,
+            "sparse": false
+          }
+        ],
+        "relationships": [],
+        "sampleDocuments": [
+          {
+            "_id": "1",
+            "id": 9,
+            "name": "Stockholm Office",
+            "city": "Stockholm",
+            "country": "Sweden",
+            "tier": "Tier 3",
+            "lastAssessment": "Never"
+          },
+          {
+            "_id": "2",
+            "id": 10,
+            "name": "Dubai Hub",
+            "city": "Dubai",
+            "country": "UAE",
+            "tier": "Tier 2",
+            "lastAssessment": "2023-07-15"
+          }
+        ]
+      },
+      {
+        "name": "issuesData",
+        "documentCount": 5,
+        "fields": {
+          "id": "number",
+          "title": "string",
+          "description": "string",
+          "severity": "string",
+          "status": "string",
+          "siteId": "number",
+          "openedDate": "string",
+          "dueDate": "string",
+          "complexity": "string",
+          "type": "string",
+          "owner": "string"
+        },
+        "indexes": [
+          {
+            "name": "_id_",
+            "key": {
+              "_id": 1
+            },
+            "unique": false,
+            "sparse": false
+          }
+        ],
+        "relationships": [],
+        "sampleDocuments": [
+          {
+            "_id": "1",
+            "id": 1,
+            "title": "Intermittent Network Outages",
+            "description": "Users reporting random network disconnections",
+            "severity": "High",
+            "status": "In Progress",
+            "siteId": 1,
+            "openedDate": "2024-03-05T00:00:00Z",
+            "dueDate": "2024-05-15T00:00:00Z",
+            "complexity": "High",
+            "type": "Technical",
+            "owner": "Robert Davis"
+          },
+          {
+            "_id": "2",
+            "id": 2,
+            "title": "Meeting Room AV Systems Unreliable",
+            "description": "Video conferencing systems failing during important meetings",
+            "severity": "Medium",
+            "status": "Open",
+            "siteId": 1,
+            "openedDate": "2024-02-18T00:00:00Z",
+            "dueDate": "2024-06-01T00:00:00Z",
+            "complexity": "Low",
+            "type": "Operational",
+            "owner": "Lisa Wilson"
+          }
+        ]
+      },
+      {
+        "name": "maturityTrendData",
+        "documentCount": 12,
+        "fields": {
+          "siteId": "number",
+          "date": "string",
+          "score": "number",
+          "dimensions": "array<[object Object]>"
+        },
+        "indexes": [
+          {
+            "name": "_id_",
+            "key": {
+              "_id": 1
+            },
+            "unique": false,
+            "sparse": false
+          }
+        ],
+        "relationships": [],
+        "sampleDocuments": [
+          {
+            "_id": "1",
+            "siteId": 1,
+            "date": "2023-09-01",
+            "score": 3.2,
+            "dimensions": [
+              {
+                "dimension": "Internal Support",
+                "score": 3.5
+              },
+              {
+                "dimension": "External Support",
+                "score": 3.4
+              },
+              {
+                "dimension": "Support Metrics",
+                "score": 3
+              },
+              {
+                "dimension": "Redundancy",
+                "score": 3.6
+              },
+              {
+                "dimension": "Inventory Management",
+                "score": 3
+              },
+              {
+                "dimension": "Alerting",
+                "score": 3.3
+              },
+              {
+                "dimension": "Monitoring",
+                "score": 3.1
+              },
+              {
+                "dimension": "Maintenance",
+                "score": 3
+              },
+              {
+                "dimension": "Testing",
+                "score": 2.8
+              }
+            ]
+          },
+          {
+            "_id": "2",
+            "siteId": 1,
+            "date": "2023-11-01",
+            "score": 3.4,
+            "dimensions": [
+              {
+                "dimension": "Internal Support",
+                "score": 3.7
+              },
+              {
+                "dimension": "External Support",
+                "score": 3.6
+              },
+              {
+                "dimension": "Support Metrics",
+                "score": 3.2
+              },
+              {
+                "dimension": "Redundancy",
+                "score": 3.8
+              },
+              {
+                "dimension": "Inventory Management",
+                "score": 3.2
+              },
+              {
+                "dimension": "Alerting",
+                "score": 3.5
+              },
+              {
+                "dimension": "Monitoring",
+                "score": 3.3
+              },
+              {
+                "dimension": "Maintenance",
+                "score": 3.2
+              },
+              {
+                "dimension": "Testing",
+                "score": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "drDimensions",
+        "documentCount": 9,
+        "fields": {
+          "id": "number",
+          "name": "string",
+          "description": "string",
+          "parameters": "array<[object Object]>"
+        },
+        "indexes": [
+          {
+            "name": "_id_",
+            "key": {
+              "_id": 1
+            },
+            "unique": false,
+            "sparse": false
+          }
+        ],
+        "relationships": [],
+        "sampleDocuments": [
+          {
+            "_id": "1",
+            "id": 1,
+            "name": "Internal Support",
+            "description": "Internal IT support resources available",
+            "parameters": [
+              {
+                "id": 101,
+                "name": "Support Team Size",
+                "description": "Number of dedicated support staff",
+                "type": "numeric",
+                "scorable": true,
+                "weightage": 0.7
+              },
+              {
+                "id": 102,
+                "name": "Skill Coverage",
+                "description": "Coverage of required skills in support team",
+                "type": "percentage",
+                "scorable": true,
+                "weightage": 0.8
+              },
+              {
+                "id": 103,
+                "name": "24/7 Coverage",
+                "description": "Availability of round-the-clock support",
+                "type": "boolean",
+                "scorable": true,
+                "weightage": 0.6
+              }
+            ]
+          },
+          {
+            "_id": "2",
+            "id": 2,
+            "name": "External Support",
+            "description": "Vendor and third-party support arrangements",
+            "parameters": [
+              {
+                "id": 201,
+                "name": "Vendor SLA",
+                "description": "Service level agreements with vendors",
+                "type": "options",
+                "options": [
+                  "None",
+                  "Basic",
+                  "Standard",
+                  "Premium",
+                  "Platinum"
+                ],
+                "scorable": true,
+                "weightage": 0.7
+              },
+              {
+                "id": 202,
+                "name": "Support Hours",
+                "description": "Vendor support availability hours",
+                "type": "options",
+                "options": [
+                  "Business hours only",
+                  "Extended hours",
+                  "24/7/365"
+                ],
+                "scorable": true,
+                "weightage": 0.6
+              },
+              {
+                "id": 203,
+                "name": "Response Time",
+                "description": "Guaranteed vendor response time for critical issues",
+                "type": "time",
+                "unit": "hours",
+                "scorable": true,
+                "weightage": 0.8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "serviceAssets",
+        "documentCount": 8,
+        "fields": {
+          "id": "number",
+          "name": "string",
+          "description": "string",
+          "serviceId": "number",
+          "siteId": "number",
+          "type": "string",
+          "vendor": "string",
+          "model": "string",
+          "serialNumber": "string",
+          "purchaseDate": "string",
+          "warrantyExpiry": "string",
+          "criticality": "string",
+          "status": "string",
+          "maintenanceWindow": "string",
+          "lastMaintenanceDate": "string",
+          "ipAddress": "string",
+          "osVersion": "string",
+          "cpuCores": "number",
+          "memoryGB": "number",
+          "storageGB": "number"
+        },
+        "indexes": [
+          {
+            "name": "_id_",
+            "key": {
+              "_id": 1
+            },
+            "unique": false,
+            "sparse": false
+          }
+        ],
+        "relationships": [],
+        "sampleDocuments": [
+          {
+            "_id": "1",
+            "id": 1,
+            "name": "Mail Server 1",
+            "description": "Primary Exchange server",
+            "serviceId": 1,
+            "siteId": 1,
+            "type": "Server",
+            "vendor": "Dell",
+            "model": "PowerEdge R740",
+            "serialNumber": "DELLT78EXP102",
+            "purchaseDate": "2022-05-18",
+            "warrantyExpiry": "2025-05-18",
+            "criticality": "High",
+            "status": "Production",
+            "maintenanceWindow": "Sunday 01:00-05:00",
+            "lastMaintenanceDate": "2024-02-18",
+            "ipAddress": "10.10.1.15",
+            "osVersion": "Windows Server 2019",
+            "cpuCores": 16,
+            "memoryGB": 64,
+            "storageGB": 2000
+          },
+          {
+            "_id": "2",
+            "id": 2,
+            "name": "Mail Server 2",
+            "description": "Secondary Exchange server",
+            "serviceId": 1,
+            "siteId": 2,
+            "type": "Server",
+            "vendor": "Dell",
+            "model": "PowerEdge R740",
+            "serialNumber": "DELLT78EXP103",
+            "purchaseDate": "2022-05-18",
+            "warrantyExpiry": "2025-05-18",
+            "criticality": "High",
+            "status": "Production",
+            "maintenanceWindow": "Sunday 01:00-05:00",
+            "lastMaintenanceDate": "2024-02-18",
+            "ipAddress": "10.20.1.15",
+            "osVersion": "Windows Server 2019",
+            "cpuCores": 16,
+            "memoryGB": 64,
+            "storageGB": 2000
+          }
+        ]
+      },
+      {
+        "name": "officeSites",
+        "documentCount": 8,
+        "fields": {
+          "id": "number",
+          "name": "string",
+          "city": "string",
+          "country": "string",
+          "address": "string",
+          "employeeCount": "number",
+          "tier": "number",
+          "activeRisksIssues": "number",
+          "maturityScore": "number"
+        },
+        "indexes": [
+          {
+            "name": "_id_",
+            "key": {
+              "_id": 1
+            },
+            "unique": false,
+            "sparse": false
+          }
+        ],
+        "relationships": [],
+        "sampleDocuments": [
+          {
+            "_id": "1",
+            "id": 1,
+            "name": "London HQ",
+            "city": "London",
+            "country": "United Kingdom",
+            "address": "123 Thames Blvd, London",
+            "employeeCount": 850,
+            "tier": 1,
+            "activeRisksIssues": 5,
+            "maturityScore": 3.8
+          },
+          {
+            "_id": "2",
+            "id": 2,
+            "name": "New York Office",
+            "city": "New York",
+            "country": "United States",
+            "address": "456 Broadway, New York",
+            "employeeCount": 620,
+            "tier": 1,
+            "activeRisksIssues": 7,
+            "maturityScore": 3.5
+          }
+        ]
+      },
+      {
+        "name": "criticalITServices",
+        "documentCount": 8,
+        "fields": {
+          "id": "number",
+          "name": "string",
+          "description": "string",
+          "type": "string",
+          "criticality": "string",
+          "vendor": "string",
+          "technology": "string",
+          "rto": "string",
+          "rpo": "string",
+          "responsibleTeam": "string",
+          "supportContact": "string",
+          "lastTestedDate": "string",
+          "lastIncidentDate": "string",
+          "status": "string"
+        },
+        "indexes": [
+          {
+            "name": "_id_",
+            "key": {
+              "_id": 1
+            },
+            "unique": false,
+            "sparse": false
+          }
+        ],
+        "relationships": [],
+        "sampleDocuments": [
+          {
+            "_id": "1",
+            "id": 1,
+            "name": "Email Services",
+            "description": "Enterprise email and collaboration platform",
+            "type": "Communication",
+            "criticality": "High",
+            "vendor": "Microsoft",
+            "technology": "Exchange Online",
+            "rto": "4 hours",
+            "rpo": "15 minutes",
+            "responsibleTeam": "IT Infrastructure",
+            "supportContact": "infrastructure@company.com",
+            "lastTestedDate": "2024-01-15",
+            "lastIncidentDate": "2023-11-23",
+            "status": "Operational"
+          },
+          {
+            "_id": "2",
+            "id": 2,
+            "name": "ERP System",
+            "description": "Enterprise Resource Planning system",
+            "type": "Business Operations",
+            "criticality": "Critical",
+            "vendor": "SAP",
+            "technology": "SAP S/4HANA",
+            "rto": "2 hours",
+            "rpo": "5 minutes",
+            "responsibleTeam": "Business Applications",
+            "supportContact": "erp-support@company.com",
+            "lastTestedDate": "2023-12-05",
+            "lastIncidentDate": "2023-10-18",
+            "status": "Operational"
+          }
+        ]
+      },
+      {
+        "name": "siteMaturityBreakdowns",
+        "documentCount": 3,
+        "fields": {
+          "siteId": "number",
+          "siteName": "string",
+          "city": "string",
+          "country": "string",
+          "tier": "string",
+          "overallScore": "number",
+          "dimensions": "array<[object Object]>",
+          "services": "array<[object Object]>"
+        },
+        "indexes": [
+          {
+            "name": "_id_",
+            "key": {
+              "_id": 1
+            },
+            "unique": false,
+            "sparse": false
+          }
+        ],
+        "relationships": [],
+        "sampleDocuments": [
+          {
+            "_id": "1",
+            "siteId": 1,
+            "siteName": "London HQ",
+            "city": "London",
+            "country": "United Kingdom",
+            "tier": "Tier 1",
+            "overallScore": 3.8,
+            "dimensions": [
+              {
+                "dimension": "Internal Support",
+                "score": 4.2
+              },
+              {
+                "dimension": "External Support",
+                "score": 3.9
+              },
+              {
+                "dimension": "Support Metrics",
+                "score": 3.5
+              },
+              {
+                "dimension": "Redundancy",
+                "score": 4.3
+              },
+              {
+                "dimension": "Inventory Management",
+                "score": 3.6
+              },
+              {
+                "dimension": "Alerting",
+                "score": 4
+              },
+              {
+                "dimension": "Monitoring",
+                "score": 3.7
+              },
+              {
+                "dimension": "Maintenance",
+                "score": 3.6
+              },
+              {
+                "dimension": "Testing",
+                "score": 3.5
+              }
+            ],
+            "services": [
+              {
+                "serviceId": 1,
+                "overallScore": 3.9,
+                "dimensionScores": [
+                  {
+                    "dimension": "Internal Support",
+                    "score": 4.2
+                  },
+                  {
+                    "dimension": "External Support",
+                    "score": 4
+                  },
+                  {
+                    "dimension": "Support Metrics",
+                    "score": 3.5
+                  },
+                  {
+                    "dimension": "Redundancy",
+                    "score": 4.3
+                  },
+                  {
+                    "dimension": "Inventory Management",
+                    "score": 3.6
+                  },
+                  {
+                    "dimension": "Alerting",
+                    "score": 4.2
+                  },
+                  {
+                    "dimension": "Monitoring",
+                    "score": 3.8
+                  },
+                  {
+                    "dimension": "Maintenance",
+                    "score": 3.7
+                  },
+                  {
+                    "dimension": "Testing",
+                    "score": 3.6
+                  }
+                ]
+              },
+              {
+                "serviceId": 2,
+                "overallScore": 4.1,
+                "dimensionScores": [
+                  {
+                    "dimension": "Internal Support",
+                    "score": 4.3
+                  },
+                  {
+                    "dimension": "External Support",
+                    "score": 4.2
+                  },
+                  {
+                    "dimension": "Support Metrics",
+                    "score": 3.8
+                  },
+                  {
+                    "dimension": "Redundancy",
+                    "score": 4.4
+                  },
+                  {
+                    "dimension": "Inventory Management",
+                    "score": 3.9
+                  },
+                  {
+                    "dimension": "Alerting",
+                    "score": 4.3
+                  },
+                  {
+                    "dimension": "Monitoring",
+                    "score": 4
+                  },
+                  {
+                    "dimension": "Maintenance",
+                    "score": 4
+                  },
+                  {
+                    "dimension": "Testing",
+                    "score": 4
+                  }
+                ]
+              },
+              {
+                "serviceId": 4,
+                "overallScore": 4.3,
+                "dimensionScores": [
+                  {
+                    "dimension": "Internal Support",
+                    "score": 4.5
+                  },
+                  {
+                    "dimension": "External Support",
+                    "score": 4.4
+                  },
+                  {
+                    "dimension": "Support Metrics",
+                    "score": 4.2
+                  },
+                  {
+                    "dimension": "Redundancy",
+                    "score": 4.5
+                  },
+                  {
+                    "dimension": "Inventory Management",
+                    "score": 4
+                  },
+                  {
+                    "dimension": "Alerting",
+                    "score": 4.5
+                  },
+                  {
+                    "dimension": "Monitoring",
+                    "score": 4.3
+                  },
+                  {
+                    "dimension": "Maintenance",
+                    "score": 4.2
+                  },
+                  {
+                    "dimension": "Testing",
+                    "score": 4.2
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "_id": "2",
+            "siteId": 2,
+            "siteName": "New York Office",
+            "city": "New York",
+            "country": "United States",
+            "tier": "Tier 1",
+            "overallScore": 3.5,
+            "dimensions": [
+              {
+                "dimension": "Internal Support",
+                "score": 3.8
+              },
+              {
+                "dimension": "External Support",
+                "score": 3.7
+              },
+              {
+                "dimension": "Support Metrics",
+                "score": 3.2
+              },
+              {
+                "dimension": "Redundancy",
+                "score": 3.9
+              },
+              {
+                "dimension": "Inventory Management",
+                "score": 3.4
+              },
+              {
+                "dimension": "Alerting",
+                "score": 3.7
+              },
+              {
+                "dimension": "Monitoring",
+                "score": 3.5
+              },
+              {
+                "dimension": "Maintenance",
+                "score": 3.3
+              },
+              {
+                "dimension": "Testing",
+                "score": 3
+              }
+            ],
+            "services": [
+              {
+                "serviceId": 1,
+                "overallScore": 3.6,
+                "dimensionScores": [
+                  {
+                    "dimension": "Internal Support",
+                    "score": 3.9
+                  },
+                  {
+                    "dimension": "External Support",
+                    "score": 3.8
+                  },
+                  {
+                    "dimension": "Support Metrics",
+                    "score": 3.3
+                  },
+                  {
+                    "dimension": "Redundancy",
+                    "score": 4
+                  },
+                  {
+                    "dimension": "Inventory Management",
+                    "score": 3.5
+                  },
+                  {
+                    "dimension": "Alerting",
+                    "score": 3.8
+                  },
+                  {
+                    "dimension": "Monitoring",
+                    "score": 3.6
+                  },
+                  {
+                    "dimension": "Maintenance",
+                    "score": 3.4
+                  },
+                  {
+                    "dimension": "Testing",
+                    "score": 3.1
+                  }
+                ]
+              },
+              {
+                "serviceId": 3,
+                "overallScore": 3.8,
+                "dimensionScores": [
+                  {
+                    "dimension": "Internal Support",
+                    "score": 4.1
+                  },
+                  {
+                    "dimension": "External Support",
+                    "score": 4
+                  },
+                  {
+                    "dimension": "Support Metrics",
+                    "score": 3.5
+                  },
+                  {
+                    "dimension": "Redundancy",
+                    "score": 4.2
+                  },
+                  {
+                    "dimension": "Inventory Management",
+                    "score": 3.7
+                  },
+                  {
+                    "dimension": "Alerting",
+                    "score": 4
+                  },
+                  {
+                    "dimension": "Monitoring",
+                    "score": 3.8
+                  },
+                  {
+                    "dimension": "Maintenance",
+                    "score": 3.6
+                  },
+                  {
+                    "dimension": "Testing",
+                    "score": 3.3
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "drParameters",
+        "documentCount": 5,
+        "fields": {
+          "id": "number",
+          "name": "string",
+          "description": "string",
+          "unit": "string",
+          "businessUnit": "string",
+          "parameters": "array<[object Object]>"
+        },
+        "indexes": [
+          {
+            "name": "_id_",
+            "key": {
+              "_id": 1
+            },
+            "unique": false,
+            "sparse": false
+          }
+        ],
+        "relationships": [],
+        "sampleDocuments": [
+          {
+            "_id": "1",
+            "id": 1,
+            "name": "Recovery Time Objective (RTO)",
+            "description": "Maximum allowable time to restore service after disaster",
+            "unit": "hours",
+            "businessUnit": "All",
+            "parameters": [
+              {
+                "serviceId": 1,
+                "value": "4",
+                "notes": "Based on business impact analysis"
+              },
+              {
+                "serviceId": 2,
+                "value": "2",
+                "notes": "Critical for business operations"
+              },
+              {
+                "serviceId": 3,
+                "value": "4",
+                "notes": "Moderate business impact if unavailable"
+              },
+              {
+                "serviceId": 4,
+                "value": "1",
+                "notes": "Highest criticality due to financial impact"
+              },
+              {
+                "serviceId": 5,
+                "value": "8",
+                "notes": "Lower priority system"
+              },
+              {
+                "serviceId": 6,
+                "value": "2",
+                "notes": "Required for all other systems to function"
+              },
+              {
+                "serviceId": 7,
+                "value": "1",
+                "notes": "Direct revenue impact"
+              },
+              {
+                "serviceId": 8,
+                "value": "8",
+                "notes": "Non-critical for immediate operations"
+              }
+            ]
+          },
+          {
+            "_id": "2",
+            "id": 2,
+            "name": "Recovery Point Objective (RPO)",
+            "description": "Maximum acceptable data loss in time",
+            "unit": "minutes",
+            "businessUnit": "All",
+            "parameters": [
+              {
+                "serviceId": 1,
+                "value": "15",
+                "notes": "Email data is important but not transactional"
+              },
+              {
+                "serviceId": 2,
+                "value": "5",
+                "notes": "Near real-time replication required"
+              },
+              {
+                "serviceId": 3,
+                "value": "30",
+                "notes": "Customer data is synced from other systems"
+              },
+              {
+                "serviceId": 4,
+                "value": "0",
+                "notes": "Zero data loss acceptable for banking"
+              },
+              {
+                "serviceId": 5,
+                "value": "60",
+                "notes": "Voice logs retained but not critical"
+              },
+              {
+                "serviceId": 6,
+                "value": "15",
+                "notes": "Authentication data must be current"
+              },
+              {
+                "serviceId": 7,
+                "value": "0",
+                "notes": "Financial transactions must not be lost"
+              },
+              {
+                "serviceId": 8,
+                "value": "1440",
+                "notes": "Daily backups sufficient"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "backendHints": {
+    "suggestedRoutes": [
+      {
+        "path": "/users",
+        "methods": [
+          "GET",
+          "POST"
+        ],
+        "description": "Get all users or create a new one"
+      },
+      {
+        "path": "/users/:id",
+        "methods": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "description": "Get, update or delete a specific users"
+      },
+      {
+        "path": "/risksData",
+        "methods": [
+          "GET",
+          "POST"
+        ],
+        "description": "Get all risksData or create a new one"
+      },
+      {
+        "path": "/risksData/:id",
+        "methods": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "description": "Get, update or delete a specific risksData"
+      },
+      {
+        "path": "/risksData/status/:status",
+        "methods": [
+          "GET"
+        ],
+        "description": "Get risksData filtered by status"
+      },
+      {
+        "path": "/lowestScoringSites",
+        "methods": [
+          "GET",
+          "POST"
+        ],
+        "description": "Get all lowestScoringSites or create a new one"
+      },
+      {
+        "path": "/lowestScoringSites/:id",
+        "methods": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "description": "Get, update or delete a specific lowestScoringSites"
+      },
+      {
+        "path": "/unassessedSites",
+        "methods": [
+          "GET",
+          "POST"
+        ],
+        "description": "Get all unassessedSites or create a new one"
+      },
+      {
+        "path": "/unassessedSites/:id",
+        "methods": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "description": "Get, update or delete a specific unassessedSites"
+      },
+      {
+        "path": "/issuesData",
+        "methods": [
+          "GET",
+          "POST"
+        ],
+        "description": "Get all issuesData or create a new one"
+      },
+      {
+        "path": "/issuesData/:id",
+        "methods": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "description": "Get, update or delete a specific issuesData"
+      },
+      {
+        "path": "/issuesData/status/:status",
+        "methods": [
+          "GET"
+        ],
+        "description": "Get issuesData filtered by status"
+      },
+      {
+        "path": "/maturityTrendData",
+        "methods": [
+          "GET",
+          "POST"
+        ],
+        "description": "Get all maturityTrendData or create a new one"
+      },
+      {
+        "path": "/maturityTrendData/:id",
+        "methods": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "description": "Get, update or delete a specific maturityTrendData"
+      },
+      {
+        "path": "/drDimensions",
+        "methods": [
+          "GET",
+          "POST"
+        ],
+        "description": "Get all drDimensions or create a new one"
+      },
+      {
+        "path": "/drDimensions/:id",
+        "methods": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "description": "Get, update or delete a specific drDimensions"
+      },
+      {
+        "path": "/serviceAssets",
+        "methods": [
+          "GET",
+          "POST"
+        ],
+        "description": "Get all serviceAssets or create a new one"
+      },
+      {
+        "path": "/serviceAssets/:id",
+        "methods": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "description": "Get, update or delete a specific serviceAssets"
+      },
+      {
+        "path": "/serviceAssets/status/:status",
+        "methods": [
+          "GET"
+        ],
+        "description": "Get serviceAssets filtered by status"
+      },
+      {
+        "path": "/officeSites",
+        "methods": [
+          "GET",
+          "POST"
+        ],
+        "description": "Get all officeSites or create a new one"
+      },
+      {
+        "path": "/officeSites/:id",
+        "methods": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "description": "Get, update or delete a specific officeSites"
+      },
+      {
+        "path": "/criticalITServices",
+        "methods": [
+          "GET",
+          "POST"
+        ],
+        "description": "Get all criticalITServices or create a new one"
+      },
+      {
+        "path": "/criticalITServices/:id",
+        "methods": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "description": "Get, update or delete a specific criticalITServices"
+      },
+      {
+        "path": "/criticalITServices/status/:status",
+        "methods": [
+          "GET"
+        ],
+        "description": "Get criticalITServices filtered by status"
+      },
+      {
+        "path": "/siteMaturityBreakdowns",
+        "methods": [
+          "GET",
+          "POST"
+        ],
+        "description": "Get all siteMaturityBreakdowns or create a new one"
+      },
+      {
+        "path": "/siteMaturityBreakdowns/:id",
+        "methods": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "description": "Get, update or delete a specific siteMaturityBreakdowns"
+      },
+      {
+        "path": "/drParameters",
+        "methods": [
+          "GET",
+          "POST"
+        ],
+        "description": "Get all drParameters or create a new one"
+      },
+      {
+        "path": "/drParameters/:id",
+        "methods": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "description": "Get, update or delete a specific drParameters"
+      }
+    ],
+    "modelDefinitions": {
+      "User": {
+        "collectionName": "users",
+        "fields": [],
+        "timestamps": true
+      },
+      "RisksData": {
+        "collectionName": "risksData",
+        "fields": [
+          {
+            "name": "id",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "impact",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "likelihood",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "siteId",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "openedDate",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "dueDate",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "complexity",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "owner",
+            "type": "string",
+            "required": false
+          }
+        ],
+        "timestamps": true
+      },
+      "LowestScoringSite": {
+        "collectionName": "lowestScoringSites",
+        "fields": [
+          {
+            "name": "id",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "tier",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "score",
+            "type": "number",
+            "required": false
+          }
+        ],
+        "timestamps": true
+      },
+      "UnassessedSite": {
+        "collectionName": "unassessedSites",
+        "fields": [
+          {
+            "name": "id",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "tier",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "lastAssessment",
+            "type": "string",
+            "required": false
+          }
+        ],
+        "timestamps": true
+      },
+      "IssuesData": {
+        "collectionName": "issuesData",
+        "fields": [
+          {
+            "name": "id",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "severity",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "siteId",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "openedDate",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "dueDate",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "complexity",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "owner",
+            "type": "string",
+            "required": false
+          }
+        ],
+        "timestamps": true
+      },
+      "MaturityTrendData": {
+        "collectionName": "maturityTrendData",
+        "fields": [
+          {
+            "name": "siteId",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "date",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "score",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "dimensions",
+            "type": "array<[object Object]>",
+            "required": false
+          }
+        ],
+        "timestamps": true
+      },
+      "DrDimension": {
+        "collectionName": "drDimensions",
+        "fields": [
+          {
+            "name": "id",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "parameters",
+            "type": "array<[object Object]>",
+            "required": false
+          }
+        ],
+        "timestamps": true
+      },
+      "ServiceAsset": {
+        "collectionName": "serviceAssets",
+        "fields": [
+          {
+            "name": "id",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "serviceId",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "siteId",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "vendor",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "model",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "serialNumber",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "purchaseDate",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "warrantyExpiry",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "criticality",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "maintenanceWindow",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "lastMaintenanceDate",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "ipAddress",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "osVersion",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "cpuCores",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "memoryGB",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "storageGB",
+            "type": "number",
+            "required": false
+          }
+        ],
+        "timestamps": true
+      },
+      "OfficeSite": {
+        "collectionName": "officeSites",
+        "fields": [
+          {
+            "name": "id",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "address",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "employeeCount",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "tier",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "activeRisksIssues",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "maturityScore",
+            "type": "number",
+            "required": false
+          }
+        ],
+        "timestamps": true
+      },
+      "CriticalITService": {
+        "collectionName": "criticalITServices",
+        "fields": [
+          {
+            "name": "id",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "type",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "criticality",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "vendor",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "technology",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "rto",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "rpo",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "responsibleTeam",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "supportContact",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "lastTestedDate",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "lastIncidentDate",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "status",
+            "type": "string",
+            "required": false
+          }
+        ],
+        "timestamps": true
+      },
+      "SiteMaturityBreakdown": {
+        "collectionName": "siteMaturityBreakdowns",
+        "fields": [
+          {
+            "name": "siteId",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "siteName",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "city",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "country",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "tier",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "overallScore",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "dimensions",
+            "type": "array<[object Object]>",
+            "required": false
+          },
+          {
+            "name": "services",
+            "type": "array<[object Object]>",
+            "required": false
+          }
+        ],
+        "timestamps": true
+      },
+      "DrParameter": {
+        "collectionName": "drParameters",
+        "fields": [
+          {
+            "name": "id",
+            "type": "number",
+            "required": false
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "unit",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "businessUnit",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "parameters",
+            "type": "array<[object Object]>",
+            "required": false
+          }
+        ],
+        "timestamps": true
+      }
+    },
+    "apiEndpoints": {
+      "users": {
+        "base": "/api/users",
+        "operations": [
+          {
+            "path": "/",
+            "method": "GET",
+            "description": "Get all users",
+            "queryParams": [
+              "limit",
+              "skip",
+              "sort"
+            ]
+          },
+          {
+            "path": "/",
+            "method": "POST",
+            "description": "Create a new users",
+            "bodyParams": []
+          },
+          {
+            "path": "/:id",
+            "method": "GET",
+            "description": "Get a specific users by ID"
+          },
+          {
+            "path": "/:id",
+            "method": "PUT",
+            "description": "Update a specific users",
+            "bodyParams": []
+          },
+          {
+            "path": "/:id",
+            "method": "DELETE",
+            "description": "Delete a specific users"
+          }
+        ]
+      },
+      "risksData": {
+        "base": "/api/risksData",
+        "operations": [
+          {
+            "path": "/",
+            "method": "GET",
+            "description": "Get all risksData",
+            "queryParams": [
+              "limit",
+              "skip",
+              "sort"
+            ]
+          },
+          {
+            "path": "/",
+            "method": "POST",
+            "description": "Create a new risksData",
+            "bodyParams": [
+              "id",
+              "title",
+              "description",
+              "impact",
+              "likelihood",
+              "status",
+              "siteId",
+              "openedDate",
+              "dueDate",
+              "complexity",
+              "type",
+              "owner"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "GET",
+            "description": "Get a specific risksData by ID"
+          },
+          {
+            "path": "/:id",
+            "method": "PUT",
+            "description": "Update a specific risksData",
+            "bodyParams": [
+              "id",
+              "title",
+              "description",
+              "impact",
+              "likelihood",
+              "status",
+              "siteId",
+              "openedDate",
+              "dueDate",
+              "complexity",
+              "type",
+              "owner"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "DELETE",
+            "description": "Delete a specific risksData"
+          }
+        ]
+      },
+      "lowestScoringSites": {
+        "base": "/api/lowestScoringSites",
+        "operations": [
+          {
+            "path": "/",
+            "method": "GET",
+            "description": "Get all lowestScoringSites",
+            "queryParams": [
+              "limit",
+              "skip",
+              "sort"
+            ]
+          },
+          {
+            "path": "/",
+            "method": "POST",
+            "description": "Create a new lowestScoringSites",
+            "bodyParams": [
+              "id",
+              "name",
+              "city",
+              "country",
+              "tier",
+              "score"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "GET",
+            "description": "Get a specific lowestScoringSites by ID"
+          },
+          {
+            "path": "/:id",
+            "method": "PUT",
+            "description": "Update a specific lowestScoringSites",
+            "bodyParams": [
+              "id",
+              "name",
+              "city",
+              "country",
+              "tier",
+              "score"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "DELETE",
+            "description": "Delete a specific lowestScoringSites"
+          }
+        ]
+      },
+      "unassessedSites": {
+        "base": "/api/unassessedSites",
+        "operations": [
+          {
+            "path": "/",
+            "method": "GET",
+            "description": "Get all unassessedSites",
+            "queryParams": [
+              "limit",
+              "skip",
+              "sort"
+            ]
+          },
+          {
+            "path": "/",
+            "method": "POST",
+            "description": "Create a new unassessedSites",
+            "bodyParams": [
+              "id",
+              "name",
+              "city",
+              "country",
+              "tier",
+              "lastAssessment"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "GET",
+            "description": "Get a specific unassessedSites by ID"
+          },
+          {
+            "path": "/:id",
+            "method": "PUT",
+            "description": "Update a specific unassessedSites",
+            "bodyParams": [
+              "id",
+              "name",
+              "city",
+              "country",
+              "tier",
+              "lastAssessment"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "DELETE",
+            "description": "Delete a specific unassessedSites"
+          }
+        ]
+      },
+      "issuesData": {
+        "base": "/api/issuesData",
+        "operations": [
+          {
+            "path": "/",
+            "method": "GET",
+            "description": "Get all issuesData",
+            "queryParams": [
+              "limit",
+              "skip",
+              "sort"
+            ]
+          },
+          {
+            "path": "/",
+            "method": "POST",
+            "description": "Create a new issuesData",
+            "bodyParams": [
+              "id",
+              "title",
+              "description",
+              "severity",
+              "status",
+              "siteId",
+              "openedDate",
+              "dueDate",
+              "complexity",
+              "type",
+              "owner"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "GET",
+            "description": "Get a specific issuesData by ID"
+          },
+          {
+            "path": "/:id",
+            "method": "PUT",
+            "description": "Update a specific issuesData",
+            "bodyParams": [
+              "id",
+              "title",
+              "description",
+              "severity",
+              "status",
+              "siteId",
+              "openedDate",
+              "dueDate",
+              "complexity",
+              "type",
+              "owner"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "DELETE",
+            "description": "Delete a specific issuesData"
+          }
+        ]
+      },
+      "maturityTrendData": {
+        "base": "/api/maturityTrendData",
+        "operations": [
+          {
+            "path": "/",
+            "method": "GET",
+            "description": "Get all maturityTrendData",
+            "queryParams": [
+              "limit",
+              "skip",
+              "sort"
+            ]
+          },
+          {
+            "path": "/",
+            "method": "POST",
+            "description": "Create a new maturityTrendData",
+            "bodyParams": [
+              "siteId",
+              "date",
+              "score",
+              "dimensions"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "GET",
+            "description": "Get a specific maturityTrendData by ID"
+          },
+          {
+            "path": "/:id",
+            "method": "PUT",
+            "description": "Update a specific maturityTrendData",
+            "bodyParams": [
+              "siteId",
+              "date",
+              "score",
+              "dimensions"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "DELETE",
+            "description": "Delete a specific maturityTrendData"
+          }
+        ]
+      },
+      "drDimensions": {
+        "base": "/api/drDimensions",
+        "operations": [
+          {
+            "path": "/",
+            "method": "GET",
+            "description": "Get all drDimensions",
+            "queryParams": [
+              "limit",
+              "skip",
+              "sort"
+            ]
+          },
+          {
+            "path": "/",
+            "method": "POST",
+            "description": "Create a new drDimensions",
+            "bodyParams": [
+              "id",
+              "name",
+              "description",
+              "parameters"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "GET",
+            "description": "Get a specific drDimensions by ID"
+          },
+          {
+            "path": "/:id",
+            "method": "PUT",
+            "description": "Update a specific drDimensions",
+            "bodyParams": [
+              "id",
+              "name",
+              "description",
+              "parameters"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "DELETE",
+            "description": "Delete a specific drDimensions"
+          }
+        ]
+      },
+      "serviceAssets": {
+        "base": "/api/serviceAssets",
+        "operations": [
+          {
+            "path": "/",
+            "method": "GET",
+            "description": "Get all serviceAssets",
+            "queryParams": [
+              "limit",
+              "skip",
+              "sort"
+            ]
+          },
+          {
+            "path": "/",
+            "method": "POST",
+            "description": "Create a new serviceAssets",
+            "bodyParams": [
+              "id",
+              "name",
+              "description",
+              "serviceId",
+              "siteId",
+              "type",
+              "vendor",
+              "model",
+              "serialNumber",
+              "purchaseDate",
+              "warrantyExpiry",
+              "criticality",
+              "status",
+              "maintenanceWindow",
+              "lastMaintenanceDate",
+              "ipAddress",
+              "osVersion",
+              "cpuCores",
+              "memoryGB",
+              "storageGB"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "GET",
+            "description": "Get a specific serviceAssets by ID"
+          },
+          {
+            "path": "/:id",
+            "method": "PUT",
+            "description": "Update a specific serviceAssets",
+            "bodyParams": [
+              "id",
+              "name",
+              "description",
+              "serviceId",
+              "siteId",
+              "type",
+              "vendor",
+              "model",
+              "serialNumber",
+              "purchaseDate",
+              "warrantyExpiry",
+              "criticality",
+              "status",
+              "maintenanceWindow",
+              "lastMaintenanceDate",
+              "ipAddress",
+              "osVersion",
+              "cpuCores",
+              "memoryGB",
+              "storageGB"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "DELETE",
+            "description": "Delete a specific serviceAssets"
+          }
+        ]
+      },
+      "officeSites": {
+        "base": "/api/officeSites",
+        "operations": [
+          {
+            "path": "/",
+            "method": "GET",
+            "description": "Get all officeSites",
+            "queryParams": [
+              "limit",
+              "skip",
+              "sort"
+            ]
+          },
+          {
+            "path": "/",
+            "method": "POST",
+            "description": "Create a new officeSites",
+            "bodyParams": [
+              "id",
+              "name",
+              "city",
+              "country",
+              "address",
+              "employeeCount",
+              "tier",
+              "activeRisksIssues",
+              "maturityScore"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "GET",
+            "description": "Get a specific officeSites by ID"
+          },
+          {
+            "path": "/:id",
+            "method": "PUT",
+            "description": "Update a specific officeSites",
+            "bodyParams": [
+              "id",
+              "name",
+              "city",
+              "country",
+              "address",
+              "employeeCount",
+              "tier",
+              "activeRisksIssues",
+              "maturityScore"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "DELETE",
+            "description": "Delete a specific officeSites"
+          }
+        ]
+      },
+      "criticalITServices": {
+        "base": "/api/criticalITServices",
+        "operations": [
+          {
+            "path": "/",
+            "method": "GET",
+            "description": "Get all criticalITServices",
+            "queryParams": [
+              "limit",
+              "skip",
+              "sort"
+            ]
+          },
+          {
+            "path": "/",
+            "method": "POST",
+            "description": "Create a new criticalITServices",
+            "bodyParams": [
+              "id",
+              "name",
+              "description",
+              "type",
+              "criticality",
+              "vendor",
+              "technology",
+              "rto",
+              "rpo",
+              "responsibleTeam",
+              "supportContact",
+              "lastTestedDate",
+              "lastIncidentDate",
+              "status"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "GET",
+            "description": "Get a specific criticalITServices by ID"
+          },
+          {
+            "path": "/:id",
+            "method": "PUT",
+            "description": "Update a specific criticalITServices",
+            "bodyParams": [
+              "id",
+              "name",
+              "description",
+              "type",
+              "criticality",
+              "vendor",
+              "technology",
+              "rto",
+              "rpo",
+              "responsibleTeam",
+              "supportContact",
+              "lastTestedDate",
+              "lastIncidentDate",
+              "status"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "DELETE",
+            "description": "Delete a specific criticalITServices"
+          }
+        ]
+      },
+      "siteMaturityBreakdowns": {
+        "base": "/api/siteMaturityBreakdowns",
+        "operations": [
+          {
+            "path": "/",
+            "method": "GET",
+            "description": "Get all siteMaturityBreakdowns",
+            "queryParams": [
+              "limit",
+              "skip",
+              "sort"
+            ]
+          },
+          {
+            "path": "/",
+            "method": "POST",
+            "description": "Create a new siteMaturityBreakdowns",
+            "bodyParams": [
+              "siteId",
+              "siteName",
+              "city",
+              "country",
+              "tier",
+              "overallScore",
+              "dimensions",
+              "services"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "GET",
+            "description": "Get a specific siteMaturityBreakdowns by ID"
+          },
+          {
+            "path": "/:id",
+            "method": "PUT",
+            "description": "Update a specific siteMaturityBreakdowns",
+            "bodyParams": [
+              "siteId",
+              "siteName",
+              "city",
+              "country",
+              "tier",
+              "overallScore",
+              "dimensions",
+              "services"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "DELETE",
+            "description": "Delete a specific siteMaturityBreakdowns"
+          }
+        ]
+      },
+      "drParameters": {
+        "base": "/api/drParameters",
+        "operations": [
+          {
+            "path": "/",
+            "method": "GET",
+            "description": "Get all drParameters",
+            "queryParams": [
+              "limit",
+              "skip",
+              "sort"
+            ]
+          },
+          {
+            "path": "/",
+            "method": "POST",
+            "description": "Create a new drParameters",
+            "bodyParams": [
+              "id",
+              "name",
+              "description",
+              "unit",
+              "businessUnit",
+              "parameters"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "GET",
+            "description": "Get a specific drParameters by ID"
+          },
+          {
+            "path": "/:id",
+            "method": "PUT",
+            "description": "Update a specific drParameters",
+            "bodyParams": [
+              "id",
+              "name",
+              "description",
+              "unit",
+              "businessUnit",
+              "parameters"
+            ]
+          },
+          {
+            "path": "/:id",
+            "method": "DELETE",
+            "description": "Delete a specific drParameters"
+          }
+        ]
+      }
+    }
+  },
+  "timestamp": "2025-04-10T15:12:55.661Z"
+}
